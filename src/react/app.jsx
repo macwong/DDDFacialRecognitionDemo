@@ -48,7 +48,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="capture-container">
                 <div className="videoContainer">
                     <div className="column column-one">
                         <History 
