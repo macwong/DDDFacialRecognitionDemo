@@ -4,6 +4,7 @@ import SliderSection from '../components/slidersection';
 import NavMenu from '../containers/navmenu';
 import Globals from '../js/globals';
 import Welcome from '../containers/welcome';
+import App from '../react/app';
 
 class PimpedMenu extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ class PimpedMenu extends Component {
                     <section className="sections">
                         <Welcome cssClass={this.showHideSection(Globals.sectionIDs.welcome)} />
                         <div id={Globals.sectionIDs.about} className={this.showHideSection(Globals.sectionIDs.about)}>
-                            About
+                            <App />
                         </div>
                         <div id={Globals.sectionIDs.contact} className={this.showHideSection(Globals.sectionIDs.contact)}>
                             Contact
