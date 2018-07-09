@@ -103,14 +103,22 @@
   }
 
   /* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 20px;
-  height: 16px;
-  left: 20px;
-  top: 20px;
-}
+  .bm-burger-button.nav-menu {
+    position: fixed;
+    width: 20px;
+    height: 16px;
+    left: 20px;
+    top: 20px;
+  }
 
+  .bm-burger-button.settings-menu {
+    position: fixed;
+    width: 20px;
+    height: 16px;
+    left: calc(100vw - 40px);
+    top: 20px;
+  }
+    
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: white;

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import SliderSection from '../components/slidersection';
 import NavMenu from '../containers/navmenu';
+import SettingsMenu from '../containers/settingsmenu';
 import Globals from '../js/globals';
 import Welcome from '../containers/welcome';
 import App from '../react/app';
@@ -21,6 +22,7 @@ class PimpedMenu extends Component {
         return (
             <div id="outer-container">
                 <NavMenu />
+                <SettingsMenu />
                 <main id="page-wrap">
                     <header>
                         <div className="title">{this.props.currentTitle}</div>
