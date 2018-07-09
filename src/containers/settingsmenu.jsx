@@ -17,10 +17,15 @@ export default class SettingsMenu extends Component {
                 pageWrapId={ "page-wrap" } 
                 outerContainerId={ "outer-container" }
                 width={350}
-                burgerButtonClassName={ "settings-menu" }
+                burgerButtonClassName={ "settings-burger" }
                 customBurgerIcon={ <img src="./images/cog.png" /> }
+                menuClassName={ "settings-menu" }
+                crossButtonClassName={ "settings-cross" }
                 right
             >
+                <header>
+                    <div className="title">Settings</div>
+                </header>
                 <div className="controlsContainer">
                     <div className="models-container">
                         <div className="models">

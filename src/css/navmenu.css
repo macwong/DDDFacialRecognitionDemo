@@ -103,7 +103,7 @@
   }
 
   /* Position and sizing of burger button */
-  .bm-burger-button.nav-menu {
+  .bm-burger-button.nav-burger {
     position: fixed;
     width: 20px;
     height: 16px;
@@ -111,7 +111,7 @@
     top: 20px;
   }
 
-  .bm-burger-button.settings-menu {
+  .bm-burger-button.settings-burger {
     position: fixed;
     width: 26px;
     height: 26x;
@@ -124,12 +124,12 @@
   background: white;
 }
 
-.bm-burger-button.nav-menu:hover .bm-burger-bars {
+.bm-burger-button.nav-burger:hover .bm-burger-bars {
   background-color: tomato !important;
   opacity: 1 !important;
 }
 
-.bm-burger-button.settings-menu:hover img {
+.bm-burger-button.settings-burger:hover img {
   content:url("../../images/cog_tomato.png");
 }
 
@@ -145,10 +145,22 @@
 }
 
 /* General sidebar styles */
-.bm-menu {
+.bm-menu.nav-menu {
   background: #373a47;
   padding: 35px 8px 10px 8px;
   font-size: 1.15em;
+}
+
+.bm-menu.settings-menu {
+  background: white;
+}
+
+.bm-menu.settings-menu header .title {
+  margin-left: 20px;
+}
+
+.bm-cross-button.settings-cross {
+  top: 15px !important;
 }
 
 /* Morph shape necessary with bubble or elastic */

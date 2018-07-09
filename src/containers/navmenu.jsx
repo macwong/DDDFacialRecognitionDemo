@@ -42,7 +42,8 @@ class NavMenu extends Component {
                 outerContainerId={ "outer-container" }
                 width={350}
                 onStateChange={this.updateIsOpen}
-                burgerButtonClassName={ "nav-menu" }
+                burgerButtonClassName={ "nav-burger" }
+                menuClassName={ "nav-menu" }
             >
                 <div className="crosshair">
                     <nav className="link-effect-14" id="link-effect-14">
