@@ -4,6 +4,7 @@ import Globals from '../js/globals';
 import { onMenuClick, updateMenuIsOpen } from '../actions/actions_menu';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import Settings from '../react/ViewerControls/settings';
 
 export default class SettingsMenu extends Component {
     constructor(props) {
@@ -26,30 +27,7 @@ export default class SettingsMenu extends Component {
                 <header>
                     <div className="title">Settings</div>
                 </header>
-                <div className="controlsContainer">
-                    <div className="models-container">
-                        <div className="models">
-                        </div>
-                        <div>
-                            <button className="primary add-model">Add</button>
-                        </div>
-                    </div>
-                    <div className="segmented">
-                        <label className="checked option-live"><input type="radio" name="segmented" defaultChecked={true} />Live</label>
-                        <label className="option-video"><input type="radio" name="segmented" />Video</label>
-                        <label className="option-image"><input type="radio" name="segmented" />Image</label>
-                    </div>
-                    <div className='busyMode'>
-                        <div className='field'>
-                            <label className='label label-toggle' htmlFor='night-mode2'>
-                            <div className='input-toggle'>
-                                <input className='input-checkbox' id='night-mode2' type='checkbox' />
-                                <span className='input-toggle-handle'></span>
-                            </div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                <Settings />
             </Menu>
         );
     }

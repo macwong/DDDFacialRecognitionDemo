@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 export default class Settings extends Component {
     render() {
         return (
-            <div className="controlsContainer">
-                <div className="models-container">
+            <div className="settingsContainer">
+                <div className="settingsModelsContainer">
                     <div className="models">
                     </div>
                     <div>

@@ -344,6 +344,26 @@ ul.fields li {
   height: 40px;
 }
 
+.settingsContainer {
+  flex: 1;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.settingsModelsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.settingsModelsContainer select {
+  margin: 0;
+  margin-right: 10px;
+}
+
 .controlsContainer {
   flex: 1;
   display: flex;
