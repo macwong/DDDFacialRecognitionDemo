@@ -1,5 +1,6 @@
 import Actions from "../js/actionkeys";
 import Globals from "../js/globals";
+import _ from "lodash";
 
 export default function(state = {}, action) {
     switch (action.type) {
@@ -28,12 +29,16 @@ export default function(state = {}, action) {
             }
         }
         default: {
-            return {
-                currentKey: "Welcome",
-                isOpen: false,
-                currentSection: Globals.sectionIDs.welcome,
-                currentTitle: ""
-            };
+            if (_.isEmpty(state)) {
+                return {
+                    currentKey: "Welcome",
+                    isOpen: false,
+                    currentSection: Globals.sectionIDs.welcome,
+                    currentTitle: ""
+                };
+            }
+            
+            return state;
         }
     }
 }

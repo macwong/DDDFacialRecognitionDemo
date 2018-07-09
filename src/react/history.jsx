@@ -2,8 +2,11 @@ import React, {Component} from 'react';
 import Helpers from '../js/helpers';
 import Globals from '../js/globals';
 import $ from 'jquery';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import {resetFace} from '../actions/actions_addface';
 
-export default class History extends Component {
+class History extends Component {
     constructor(props) {
         super(props);
 
@@ -80,6 +83,7 @@ export default class History extends Component {
         $row.closest("#history").find(".row").removeClass("selected");
         $row.addClass("selected");
         let predictionID = $row.data("prediction_id");
+        this.props.resetFace();
         this.props.infoCallback(predictionID);
     }
 
@@ -94,3 +98,10 @@ export default class History extends Component {
         });
     }
 }
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ resetFace }, dispatch);
+}
+
+
+export default connect(null, mapDispatchToProps)(History);

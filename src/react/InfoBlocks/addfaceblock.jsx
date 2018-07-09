@@ -3,37 +3,23 @@ import Block from '../block';
 import $ from 'jquery';
 import path from 'path';
 import Globals from '../../js/globals';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import {addFaceVal, updateCSSClass, updateInfoMessage} from '../../actions/actions_addface';
 
-export default class AddFaceBlock extends Component {
+class AddFaceBlock extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            addFace: "",
-            buttonClass: "add-new-face",
-            infoMessage: "Clicking \"Add\" will add this person to the training data."
-        };
-    }
-
-    componentDidUpdate(prevProps) {
-        // Typical usage (don't forget to compare props):
-        if (this.props.addFace !== prevProps.addFace) {
-            this.setState({
-                addFace: "",
-                buttonClass: "add-new-face",
-                infoMessage: "Clicking \"Add\" will add this person to the training data."
-            })
-        }
     }
 
     render() {
         return (
             <Block title="Add Face" containerClass="add-face">
                 <div className="editable-dropdown">
-                    <input 
+                    <input
                         onChange={ this.handleChange.bind(this) }
-                        value={this.state.addFace} 
-                        className="input" list="names" name="name" 
+                        value={this.props.addFace}
+                        className="input" list="names" name="name"
                     />
                     <datalist id="names" className="data-list">
                     {
@@ -46,19 +32,19 @@ export default class AddFaceBlock extends Component {
                     </datalist>
                 </div>
                 <div className="add-container">
-                    <button className={this.state.buttonClass} onClick={this.onAddNewFaceClick.bind(this)}>Add</button>
-                    <div className="add-info">{this.state.infoMessage}</div>
+                    <button className={this.props.buttonClass} onClick={this.onAddNewFaceClick.bind(this)}>Add</button>
+                    <div className="add-info">{this.props.infoMessage}</div>
                 </div>
             </Block>
         );
     }
 
     handleChange(e) {
-        this.setState({ addFace: e.target.value });
+        this.props.addFaceVal(e.target.value);
     }
 
     onAddNewFaceClick(e) {
-        let $button = $(e.currentTarget); 
+        let $button = $(e.currentTarget);
         let model_name = this.props.model_info.model_name;
 
         if (!$button.hasClass("disabled")) {
@@ -68,21 +54,27 @@ export default class AddFaceBlock extends Component {
                 data: JSON.stringify({
                     image: this.props.image,
                     model: model_name,
-                    name: this.state.addFace
+                    name: this.props.addFace
                 }),
                 contentType: "application/json; charset=utf-8",
                 dataType:"json"
             }).done(() => {
-                this.setState({
-                    infoMessage: "New face added!"
-                });
+                this.props.updateInfoMessage("New face added!");
             });
 
-            this.setState({
-                buttonClass: this.state.buttonClass + " disabled"
-            });
+            this.props.updateCSSClass(this.props.buttonClass + " disabled");
         }
     }
 
 
 }
+
+function mapStateToProps(state) {
+    return state.addFace;
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ addFaceVal, updateCSSClass, updateInfoMessage }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddFaceBlock);

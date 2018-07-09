@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import Globals from '../js/globals';
-import { onMenuClick, updateMenuIsOpen } from '../actions/actions';
+import { onMenuClick, updateMenuIsOpen } from '../actions/actions_menu';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 

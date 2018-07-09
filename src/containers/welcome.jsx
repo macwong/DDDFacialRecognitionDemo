@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Globals from '../js/globals';
-import {onPolaroidClick} from '../actions/actions';
+import {onPolaroidClick} from '../actions/actions_menu';
 
 class Welcome extends Component {
     constructor(props) {
