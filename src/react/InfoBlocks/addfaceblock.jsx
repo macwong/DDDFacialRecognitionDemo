@@ -32,7 +32,7 @@ class AddFaceBlock extends Component {
                     </datalist>
                 </div>
                 <div className="add-container">
-                    <button className={this.props.buttonClass} onClick={this.onAddNewFaceClick.bind(this)}>Add</button>
+                    <button className={"primary " + this.props.buttonClass} onClick={this.onAddNewFaceClick.bind(this)}>Add</button>
                     <div className="add-info">{this.props.infoMessage}</div>
                 </div>
             </Block>

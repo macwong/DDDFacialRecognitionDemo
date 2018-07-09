@@ -46,7 +46,7 @@ export default class AddModel extends Component {
                                     <label>Model Name:</label><input className="model-name" />
                                 </li>
                                 <li>
-                                    <label>Image Folder:</label><input className="folder-location" /><button className="choose-folder">Choose</button>
+                                    <label>Image Folder:</label><input className="folder-location" /><button className="primary choose-folder">Choose</button>
                                 </li>
                                 <li>
                                     <label>Algorithm:</label>
@@ -56,7 +56,7 @@ export default class AddModel extends Component {
                                     </select>
                                 </li>
                             </ul>
-                            <button className="model-add">Add</button>
+                            <button className="primary model-add">Add</button>
                             <span className="error-message"></span>
                         </div>
                     </div>

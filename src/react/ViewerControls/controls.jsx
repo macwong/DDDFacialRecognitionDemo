@@ -8,7 +8,7 @@ export default class Controls extends Component {
                     <div className="models">
                     </div>
                     <div>
-                        <button className="add-model">Add</button>
+                        <button className="primary add-model">Add</button>
                     </div>
                 </div>
                 <div className="segmented">
