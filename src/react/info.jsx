@@ -60,7 +60,6 @@ export default class Info extends Component {
                 <AddFaceBlock 
                     model_info={pred.model_info} 
                     image={pred.image}
-                    addFace={pred.pred_name}
                 />
             </div>
         );
