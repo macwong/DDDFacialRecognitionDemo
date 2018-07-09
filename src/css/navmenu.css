@@ -124,9 +124,13 @@
   background: white;
 }
 
-.bm-burger-button:hover .bm-burger-bars {
+.bm-burger-button.nav-menu:hover .bm-burger-bars {
   background-color: tomato !important;
   opacity: 1 !important;
+}
+
+.bm-burger-button.settings-menu:hover img {
+  content:url("../../images/cog_tomato.png");
 }
 
 /* Position and sizing of clickable cross button */
