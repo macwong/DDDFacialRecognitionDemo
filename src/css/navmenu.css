@@ -143,9 +143,8 @@
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
-  padding: 30px 0 10px 0;
+  padding: 35px 8px 10px 8px;
   font-size: 1.15em;
-  height: auto !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -156,7 +155,6 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 8px;
 }
 
 /* Individual item */
