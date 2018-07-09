@@ -113,10 +113,10 @@
 
   .bm-burger-button.settings-menu {
     position: fixed;
-    width: 20px;
-    height: 16px;
+    width: 26px;
+    height: 26x;
     left: calc(100vw - 40px);
-    top: 20px;
+    top: 14px;
   }
     
 /* Color/shape of burger icon bars */
