@@ -12,8 +12,7 @@ export default class AddModel extends Component {
         super(props);
 
         this.state = {
-            show: false,
-            currentModel: ""
+            show: false
         };
     }
 
