@@ -159,6 +159,13 @@
   margin-left: 20px;
 }
 
+.bm-menu.settings-menu label.setting-label {
+  color: #373a47;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .bm-cross-button.settings-cross {
   top: 15px !important;
 }
