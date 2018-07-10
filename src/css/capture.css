@@ -344,6 +344,10 @@ ul.fields li {
   height: 40px;
 }
 
+.setting-container {
+  margin: 10px 0;
+}
+
 .settingsContainer {
   flex: 1;
   display: flex;
@@ -354,6 +358,12 @@ ul.fields li {
   padding: 10px;
 }
 
+.settingsCaptureContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .settingsModelsContainer {
   display: flex;
   align-items: center;
@@ -362,6 +372,11 @@ ul.fields li {
 .settingsModelsContainer select {
   margin: 0;
   margin-right: 10px;
+}
+
+.add-button-container {
+  margin-left: 80px;
+  margin-bottom: 10px;
 }
 
 .controlsContainer {
@@ -620,18 +635,11 @@ select, option {
 }
 
 .busyMode {
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-      margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .field {
-  margin: auto;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;

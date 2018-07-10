@@ -163,7 +163,8 @@
   color: #373a47;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 10px;
+  width: 80px;
+  min-width: 80px;
 }
 
 .bm-cross-button.settings-cross {

@@ -4,21 +4,23 @@ export default class Settings extends Component {
     render() {
         return (
             <div className="settingsContainer">
-                <label className="setting-label">Models:</label>
-                <div className="settingsModelsContainer">
+                <div className="settingsCaptureContainer setting-container">
+                    <label className="setting-label">Capture:</label>
+                    <div className="segmented">
+                        <label className="checked option-live"><input type="radio" name="segmented" defaultChecked={true} />Live</label>
+                        <label className="option-video"><input type="radio" name="segmented" />Video</label>
+                        <label className="option-image"><input type="radio" name="segmented" />Image</label>
+                    </div>
+                </div>
+                <div className="settingsModelsContainer setting-container">
+                    <label className="setting-label">Models:</label>
                     <div className="models">
                     </div>
-                    <div>
-                        <button className="primary add-model">Add</button>
-                    </div>
                 </div>
-                <label className="setting-label">Capture:</label>
-                <div className="segmented">
-                    <label className="checked option-live"><input type="radio" name="segmented" defaultChecked={true} />Live</label>
-                    <label className="option-video"><input type="radio" name="segmented" />Video</label>
-                    <label className="option-image"><input type="radio" name="segmented" />Image</label>
+                <div className="add-button-container">
+                    <button className="primary add-model">Add</button>
                 </div>
-                <div className='busyMode'>
+                <div className='busyMode setting-container'>
                     <label className="setting-label">Logs:</label>
                     <div className='field'>
                         <label className='label label-toggle' htmlFor='night-mode2'>
