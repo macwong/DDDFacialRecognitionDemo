@@ -10,6 +10,35 @@ import { connect } from 'react-redux'
 class AddModel extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            modelName: "",
+            folderLocation: ""
+        };
+
+        this.onModelNameChanged = this.onModelNameChanged.bind(this);
+        this.onFolderLocationChanged = this.onFolderLocationChanged.bind(this);
+    }
+
+    onModelNameChanged(e) {
+        this.setState({
+            modelName: e.target.value
+        });
+    }
+    
+    onFolderLocationChanged(e) {
+        this.setState({
+            folderLocation: e.target.value
+        });
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.showAddModel !== prevProps.showAddModel) {
+            this.setState({
+                modelName: "",
+                folderLocation: ""
+            });
+        }
     }
 
     render() {
@@ -30,10 +59,10 @@ class AddModel extends Component {
                         <div className="modal-content">
                             <ul className="fields">
                                 <li>
-                                    <label>Model Name:</label><input className="model-name" />
+                                    <label>Model Name:</label><input className="model-name" value={this.state.modelName} onChange={this.onModelNameChanged} />
                                 </li>
                                 <li>
-                                    <label>Image Folder:</label><input className="folder-location" /><button className="primary choose-folder">Choose</button>
+                                    <label>Image Folder:</label><input className="folder-location" value={this.state.folderLocation} onChange={this.onFolderLocationChanged} /><button className="primary choose-folder">Choose</button>
                                 </li>
                                 <li>
                                     <label>Algorithm:</label>
