@@ -12,7 +12,7 @@ import Info from './info';
 import path from 'path';
 import AddModel from './addmodel';
 
-import { showHideAddModel } from '../actions/actions_menu';
+import { showHideAddModel } from '../actions/actions_addmodel';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
@@ -445,7 +445,7 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-    return state.menu;
+    return state.addModel;
 }
 
 function mapDispatchToProps(dispatch) {
