@@ -11,6 +11,10 @@ export default class Actions {
         return "MENU_OPEN";
     }
 
+    static get ADD_MODEL() {
+        return "ADD_MODEL";
+    }
+
     static get RESET_ADD_FACE() {
         return "RESET_ADD_FACE";
     }

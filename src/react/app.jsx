@@ -12,9 +12,13 @@ import Info from './info';
 import path from 'path';
 import AddModel from './addmodel';
 
+import { showHideAddModel } from '../actions/actions_menu';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+
 const { dialog } = electron.remote;
 
-export default class App extends Component {
+class App extends Component {
     constructor(props) {
         super(props);
 
@@ -40,7 +44,6 @@ export default class App extends Component {
             predictions: [],
             currentModel: "",
             selectedPrediction: null,
-            addModelShow: false,
             success: false,
             error: "Loading..."
         };
@@ -71,8 +74,6 @@ export default class App extends Component {
                     error={this.state.error}
                 />
                 <AddModel 
-                    show={this.state.addModelShow} 
-                    currentModel={this.state.currentModel} 
                     addCallback={this.addModelCallback.bind(this)}
                     cancelCallback={this.cancelAddModelCallback.bind(this)}
                 />
@@ -186,10 +187,10 @@ export default class App extends Component {
             $loading.removeClass("is-visible");
             $modal.removeClass('is-visible');
         
-            $modal.on('transitionend', (e) => {
+        //    $modal.on('transitionend', (e) => {
                 //when transition is finished you remove the element.
-                $modal.remove();
-            });
+                this.props.showHideAddModel(false);
+            // });
 
             let $select = this.$models.find("select");
 
@@ -204,9 +205,7 @@ export default class App extends Component {
     }
 
     cancelAddModelCallback() {
-        this.setState({
-            addModelShow: false
-        })
+        this.props.showHideAddModel(false);
     }
 
     initApp() {
@@ -231,9 +230,9 @@ export default class App extends Component {
             })
 
             $('.add-model').click((e) => {
-                this.setState({
-                    addModelShow: true
-                });
+                this.props.showHideAddModel(true);
+
+                console.log(this.state);
             });
     
             this.getVideoStream();
@@ -444,3 +443,13 @@ export default class App extends Component {
         });
     }
 }
+
+function mapStateToProps(state) {
+    return state.menu;
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ showHideAddModel }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

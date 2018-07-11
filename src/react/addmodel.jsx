@@ -1,33 +1,20 @@
 import React, {Component} from 'react';
-import Globals from '../js/globals';
-import Helpers from '../js/helpers';
 import electron from 'electron';
 import {remote} from 'electron';
 import $ from 'jquery';
-import path from 'path';
 const { dialog } = electron.remote;
+import { showHideAddModel } from '../actions/actions_menu';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
-export default class AddModel extends Component {
+class AddModel extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            show: false
-        };
-    }
-
-    componentDidUpdate(prevProps) {
-        if (this.props.show !== prevProps.show) {
-            this.setState({
-                show: this.props.show,
-                currentModel: this.props.currentModel
-            });
-        }
     }
 
     render() {
         return (
-            <div className={this.getCSS(this.state.show)} id="addModel">
+            <div className={this.getCSS(this.props.showAddModel)} id="addModel">
                 <div className="modal-overlay modal-toggle"></div>
                 <div className="modal-wrapper modal-transition">
                     <div className="modal-header">
@@ -129,3 +116,13 @@ export default class AddModel extends Component {
         });
     }
 }
+
+function mapStateToProps(state) {
+    return state.menu;
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ showHideAddModel }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AddModel);
