@@ -29,7 +29,7 @@ class PimpedMenu extends Component {
                     </header>
                     <section className="sections">
                         <Welcome cssClass={this.showHideSection(Globals.sectionIDs.welcome)} />
-                        <div id={Globals.sectionIDs.about} className={this.showHideSection(Globals.sectionIDs.about)}>
+                        <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
                         </div>
                         <div id={Globals.sectionIDs.contact} className={this.showHideSection(Globals.sectionIDs.contact)}>
