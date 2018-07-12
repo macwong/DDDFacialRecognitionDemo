@@ -29,7 +29,7 @@ class NavMenu extends Component {
     render() {
         const sections = [
             { key: "Welcome", title: "Welcome", section: Globals.sectionIDs.welcome, showTitle: false },
-            { key: "About", title: "About", section: Globals.sectionIDs.about, showTitle: true },
+            { key: "Demo", title: "Demo", section: Globals.sectionIDs.about, showTitle: true },
             { key: "Contact", title: "Contact", section: Globals.sectionIDs.contact, showTitle: true },
             { key: "Stuff", title: "Stuff", section: Globals.sectionIDs.stuff, showTitle: true },
             { key: "Blah", title: "Blah", section: Globals.sectionIDs.welcome, showTitle: false }

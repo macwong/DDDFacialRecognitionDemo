@@ -231,8 +231,6 @@ class App extends Component {
 
             $('.add-model').click((e) => {
                 this.props.showHideAddModel(true);
-
-                console.log(this.state);
             });
     
             this.getVideoStream();
