@@ -35,6 +35,13 @@ class NavMenu extends Component {
             { key: "Blah", title: "Blah", section: Globals.sectionIDs.welcome, showTitle: false }
         ];
 
+        let burgerCSS = "nav-burger ";
+
+        if (this.props.currentSection === Globals.sectionIDs.welcome) {
+            burgerCSS += "hidden";
+        }
+        
+
         return (
             <Menu 
                 isOpen={this.props.isOpen}
@@ -42,7 +49,7 @@ class NavMenu extends Component {
                 outerContainerId={ "outer-container" }
                 width={350}
                 onStateChange={this.updateIsOpen}
-                burgerButtonClassName={ "nav-burger" }
+                burgerButtonClassName={ burgerCSS }
                 menuClassName={ "nav-menu" }
             >
                 <div className="crosshair">
