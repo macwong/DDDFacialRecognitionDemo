@@ -30,7 +30,7 @@ class App extends Component {
         this.$models = null;
 
         this.$resultsOverlay = null;
-        this.isVideo = true;
+        this.isVideo = false;
         this.verbose = false;
         this.currentImages = [];
         this.predictionHistory = {};
@@ -45,7 +45,7 @@ class App extends Component {
             currentModel: "",
             selectedPrediction: null,
             success: false,
-            error: "Loading..."
+            error: "Please select image"
         };
     }
 
@@ -152,6 +152,8 @@ class App extends Component {
                 }
             }
         });
+
+        $segment.first().trigger("change");
     
         $(this.videoEl).click((e) => {
             if ($(e.currentTarget).hasClass("file")) {
@@ -187,10 +189,7 @@ class App extends Component {
             $loading.removeClass("is-visible");
             $modal.removeClass('is-visible');
         
-        //    $modal.on('transitionend', (e) => {
-                //when transition is finished you remove the element.
-                this.props.showHideAddModel(false);
-            // });
+            this.props.showHideAddModel(false);
 
             let $select = this.$models.find("select");
 
@@ -232,6 +231,16 @@ class App extends Component {
             $('.add-model').click((e) => {
                 this.props.showHideAddModel(true);
             });
+
+            var ctx = this.canvasEl.getContext('2d');
+            
+            // default image
+            var defImg = new Image();
+            defImg.src = "./images/qr.png";
+            defImg.onload = () => {
+                ctx.drawImage(defImg, Globals.defaultWidth / 2 - defImg.width / 2, Globals.defaultHeight / 2 - defImg.height / 2);
+            };
+            
     
             this.getVideoStream();
         });

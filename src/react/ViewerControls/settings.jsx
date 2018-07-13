@@ -7,9 +7,9 @@ export default class Settings extends Component {
                 <div className="settingsCaptureContainer setting-container">
                     <label className="setting-label">Capture:</label>
                     <div className="segmented">
-                        <label className="checked option-live"><input type="radio" name="segmented" defaultChecked={true} />Live</label>
+                        <label className="checked option-image"><input type="radio" name="segmented" defaultChecked={true} />Image</label>
+                        <label className="option-live"><input type="radio" name="segmented" />Live</label>
                         <label className="option-video"><input type="radio" name="segmented" />Video</label>
-                        <label className="option-image"><input type="radio" name="segmented" />Image</label>
                     </div>
                 </div>
                 <div className="settingsModelsContainer setting-container">
