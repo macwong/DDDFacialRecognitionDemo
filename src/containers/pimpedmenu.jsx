@@ -6,6 +6,7 @@ import SettingsMenu from '../containers/settingsmenu';
 import Globals from '../js/globals';
 import Welcome from '../containers/welcome';
 import App from '../react/app';
+import PowerpointSection from '../components/powerpointsection';
 
 class PimpedMenu extends Component {
     constructor(props) {
@@ -29,9 +30,10 @@ class PimpedMenu extends Component {
                     </header>
                     <section className="sections">
                         <Welcome cssClass={this.showHideSection(Globals.sectionIDs.welcome)} />
-                        <div id={Globals.sectionIDs.contact} className={this.showHideSection(Globals.sectionIDs.contact)}>
-                            Contact
-                        </div>
+                        <PowerpointSection 
+                            section={Globals.sectionIDs.basicconcepts} 
+                            cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} 
+                        />
 
                         <SliderSection 
                             section={Globals.sectionIDs.stuff} 
