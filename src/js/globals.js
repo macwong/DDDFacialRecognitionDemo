@@ -2,9 +2,17 @@ export default class Globals {
     static get sectionIDs() { 
         return {
             welcome: "welcome",
-            demo: "demo",
-            contact: "contact",
+            basicconcepts: "basicfeatures",
+            facialrecognitionpipeline: "facialrecognitionpipeline",
+            facedetection: "facedetection",
+            facenet: "facenet",
+            predictionmodel: "predictionmodel",
+            potentialissues: "potentialissues",
+            technologies: "technologies",
+            learningpath: "learningpath",
+            resources: "resources",
             stuff: "stuff",
+            demo: "demo",
         }; 
     }
 

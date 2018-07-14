@@ -46,7 +46,7 @@ header {
   line-height: 57px;
   margin-left: 60px;
   color: white;
-  font-family: Comfortaa-Bold;
+  font-family: Montserrat-Bold;
   letter-spacing: 1px;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   font-size: 1.15em;
@@ -58,6 +58,11 @@ header {
 @font-face {
   font-family: 'Comfortaa-Bold';
   src: url('../../fonts/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../../fonts/Montserrat-Bold.ttf');
 }
 
 @font-face {
