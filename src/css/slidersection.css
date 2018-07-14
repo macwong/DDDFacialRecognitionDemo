@@ -7,10 +7,6 @@
     flex-direction: column;
 }
 
-.slick-arrow {
-  display: none !important;
-}
-
   .box {
     display: flex;
     flex-flow: column;
