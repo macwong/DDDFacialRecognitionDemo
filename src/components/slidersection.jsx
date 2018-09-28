@@ -9,12 +9,14 @@ export default class SliderSection extends Component {
     renderBreadcrumbTitle(index) {
         switch(index) {
             case 0:
-                return "Input";
+                return "Summary";
             case 1:
-                return "Find Face";
+                return "Input";
             case 2:
-                return "Convert";
+                return "Find Face";
             case 3:
+                return "Convert";
+            case 4:
                 return "Predict";
             default:
                 return "Extra";
@@ -24,15 +26,25 @@ export default class SliderSection extends Component {
     render() {
         const settings = {
             customPaging: (i) => {
-                return (
-                    <a>
-                        <span>{i + 1}</span>
-                        <span className="breadcrumb-description">
-                            {this.renderBreadcrumbTitle(i)}
-                        </span>
-                    </a>
-
-                );
+                if (i > 0) {
+                    return (
+                        <a>
+                            <span>{i}</span>
+                            <span className="breadcrumb-description">
+                                {this.renderBreadcrumbTitle(i)}
+                            </span>
+                        </a>
+                    );
+                }
+                else {
+                    return (
+                        <a className="summary">
+                            <span className="breadcrumb-description">
+                                {this.renderBreadcrumbTitle(i)}
+                            </span>
+                        </a>
+                    )
+                }
             },
             dots: true,
             dotsClass: "cf breadcrumbs inner",
@@ -47,7 +59,23 @@ export default class SliderSection extends Component {
             <div id={this.props.section} className={"slider-section " + this.props.cssClass}>
             <div>
                 <Slider {...settings}>
-                    <div>
+                    <div className="box">
+                        Summary
+                    </div>
+                    <div className="box">
+                        Input: Original snapshot image
+                    </div>
+                    <div className="box">
+                        Find Face: Cropped snapshot
+                    </div>
+                    <div className="box">
+                        Convert: Embeddings
+                    </div>
+                    <div className="box">
+                        Predict: Final result
+                    </div>
+                    
+                    {/* <div>
                         <div className="box">
                             <div className="row header">
                                 <p><b>header</b>
@@ -73,7 +101,7 @@ export default class SliderSection extends Component {
                     </div>
                     <div>
                         Test 4
-                    </div>
+                    </div> */}
                 </Slider>
             </div>
         </div>

@@ -76,20 +76,21 @@
     list-style: none;
     display: inline-block !important;
     margin-top: 10px;
+    height: 63px;
   }
   
   .breadcrumbs li {
     float: left;
   }
   
-  .breadcrumbs li:not(:first-child) a {
+  .breadcrumbs li:not(:first-child) a:not(.summary) {
     padding-left: 30px;
   }
   
   .breadcrumbs a {
     position: relative;
     display: block;
-    padding: 20px;
+    padding: 18px;
     padding-right: 0 !important;
     /* important overrides media queries */
     font-size: 1.5em;
@@ -97,6 +98,15 @@
     text-align: center;
     color: #aaa;
     cursor: pointer;
+  }
+
+  .breadcrumbs a.summary {
+    padding-right: 15px !important;
+    height: 28px;
+  }
+
+  .breadcrumbs li:nth-child(1) a:before {
+    margin-left: 0;
   }
   
   .breadcrumbs a:hover {
@@ -108,7 +118,7 @@
     background-color: #373a47;
   }
   
-  .breadcrumbs a span:first-child {
+  .breadcrumbs a:not(.summary) span:first-child {
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -120,7 +130,7 @@
     box-sizing: border-box;
   }
   
-  .breadcrumbs li.slick-active a span:first-child {
+  .breadcrumbs li.slick-active a:not(.summary) span:first-child {
     color: #fff;
     border-color: tomato;
     background-color: tomato;
@@ -157,13 +167,21 @@
   .breadcrumbs li.slick-active a:after {
     border-left-color: #373a47;
   }
+
+  .breadcrumbs li.slick-active a.summary:before,
+  .breadcrumbs li a.summary:before,
+  .breadcrumbs li.slick-active a.summary:after,
+  .breadcrumbs li a.summary:after {
+      border-left-color: #d5d5d5;
+      border-left-width: 1px;
+  }
   
   .breadcrumbs li:last-child a:before,
   .breadcrumbs li:last-child a:after {
     display: none;
   }
   
-  .breadcrumb-description {
+  a:not(.summary) .breadcrumb-description {
     padding-right: 10px;
     padding-left: 7px;
   }
@@ -200,7 +218,7 @@
   }
   
   @media (max-width: 520px) {
-    .breadcrumbs a {
+    .breadcrumbs a:not(.summary) {
       padding: 5px;
     }
   
@@ -211,7 +229,7 @@
       border-left-width: 8px;
     }
   
-    .breadcrumbs li a span:first-child {
+    .breadcrumbs li a:not(.summary) span:first-child {
       display: block;
       margin: 0 auto;
     }

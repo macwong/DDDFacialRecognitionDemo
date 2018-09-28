@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import SliderSection from '../components/slidersection';
 import $ from 'jquery';
 
 export default class MoreInfo extends Component {
@@ -33,6 +34,11 @@ export default class MoreInfo extends Component {
                     <div className="title">Prediction</div>
                     <img className="close-button" onClick={this.closePopup.bind(this)} />
                 </header>
+                <SliderSection 
+                    section="" 
+                    cssClass=""
+                    prediction={pred}
+                />
             </div>
             // <div id="info" className="info modal">
             //     <figure className="profile">

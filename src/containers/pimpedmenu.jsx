@@ -35,10 +35,10 @@ class PimpedMenu extends Component {
                             cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} 
                         />
 
-                        <SliderSection 
+                        {/* <SliderSection 
                             section={Globals.sectionIDs.stuff} 
                             cssClass={this.showHideSection(Globals.sectionIDs.stuff)}
-                        />
+                        /> */}
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
                         </div>
