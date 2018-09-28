@@ -15,6 +15,7 @@ import AddModel from './addmodel';
 import { showHideAddModel } from '../actions/actions_addmodel';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import MoreInfo from './moreinfo';
 
 const { dialog } = electron.remote;
 
@@ -54,17 +55,12 @@ class App extends Component {
             <div className="capture-container">
                 <div className="videoContainer">
                     <div className="column column-one">
+                        <Viewer />
+                    </div>
+                    <div className="column column-two col-history hidden">
                         <History 
                             predictions={this.state.historyPredictions}
                             infoCallback={this.updateInfo.bind(this)}
-                        />
-                    </div>
-                    <div className="column column-two">
-                        <Viewer />
-                    </div>
-                    <div className="column column-three">
-                        <Info
-                            prediction={this.state.selectedPrediction}
                         />
                     </div>
                 </div>
@@ -77,6 +73,11 @@ class App extends Component {
                     addCallback={this.addModelCallback.bind(this)}
                     cancelCallback={this.cancelAddModelCallback.bind(this)}
                 />
+                <div className="info-overlay">
+                    <MoreInfo
+                        prediction={this.state.selectedPrediction}
+                    />
+                </div>
             </div>
         );
     }
@@ -85,8 +86,8 @@ class App extends Component {
         this.videoEl = document.getElementById("video");
         this.canvasEl = document.getElementById("canvas");
         this.$resultsContainer = $(document.getElementById("resultsContainer"));
-        this.$history = $(document.getElementById("history"));
-        this.$info = $(document.getElementById("info"));
+        this.$history = $(document.getElementsByClassName("col-history"));
+        this.$info = $(document.getElementsByClassName("info-overlay"));
         this.$resultsOverlay = this.$resultsContainer.find(".resultsOverlay");
 
         this.initApp();
@@ -95,13 +96,11 @@ class App extends Component {
             let $inputCheckbox = $(e.currentTarget);
     
             if ($inputCheckbox.is(":checked")) {
-                this.$history.show();
-                this.$info.show();
+                this.$history.removeClass("hidden");
                 this.verbose = true;
             }
             else {
-                this.$history.hide();
-                this.$info.hide();
+                this.$history.addClass("hidden");
                 this.verbose = false;
             }
         });
@@ -448,6 +447,8 @@ class App extends Component {
         this.setState({
             selectedPrediction: this.predictionHistory[predictionID]
         });
+
+        this.$info.show();
     }
 }
 

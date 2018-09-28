@@ -37,23 +37,19 @@ video.file {
     display: none;
 }
 
-.history {
-  display: none;
-}
-
 .column {
   flex: 1;
   padding: 10px;
 }
 
-.column-one {
-  order: 1;
+.column-two {
+  order: 2;
   padding: 10px 5px 10px 10px;
   overflow-y: auto;
 }
 
-.column-two {
-  order: 2;
+.column-one {
+  order: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -868,6 +864,27 @@ ul.nice-list li:nth-child(even) {
   height: 16px;
   vertical-align: middle;
   fill: currentcolor;
+}
+
+.info-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: white;
+  display: none;
+}
+
+.info-overlay header {
+  background-color: white;
+  border-bottom: solid 1px #373a47;
+}
+
+.info-overlay header .title {
+  margin-left: 20px;
+  color: #373a47;
 }
 
 /* 1. Ensure this sits above everything when visible */
