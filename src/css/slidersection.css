@@ -103,6 +103,7 @@
   .breadcrumbs a.summary {
     padding-right: 15px !important;
     height: 28px;
+    line-height: 28px;
   }
 
   .breadcrumbs li:nth-child(1) a:before {
