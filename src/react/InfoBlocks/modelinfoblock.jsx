@@ -22,12 +22,11 @@ export default class ModelInfoBlock extends Component {
                     <label>Total Images:</label><span className="training-images">{model_info.training_images}</span>
                 </li>
                 <li>
-                    <label>Algorithm:</label>
-                    <div className="algorithm">{model_info.algorithm}</div>
+                    <label>Algorithm:</label><span className="algorithm">{model_info.algorithm}</span>
                 </li>
                 <li>
                     <label>People:</label>
-                    <div>
+                    <span>
                         <ul className="nice-list people-list">
                             {
                                 model_info.class_names.map((cName, index) => {
@@ -37,7 +36,7 @@ export default class ModelInfoBlock extends Component {
                                 })
                             }
                         </ul>
-                    </div>
+                    </span>
                 </li>
             </ul>
             </Block>
