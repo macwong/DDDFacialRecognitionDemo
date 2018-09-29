@@ -17,9 +17,6 @@
     flex-flow: column;
   }
 
-  .powerpoint-section .box {
-  }
-  
   .box .row {
     border: 1px dotted grey;
   }
