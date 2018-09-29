@@ -7,14 +7,17 @@
     flex-direction: column;
 }
 
+.slick-list {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
   .box {
     display: flex;
     flex-flow: column;
-    height: calc(100vh - 200px);
   }
 
   .powerpoint-section .box {
-    height: calc(100vh - 100px);
   }
   
   .box .row {
