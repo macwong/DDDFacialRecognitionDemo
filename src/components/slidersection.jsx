@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import Helpers from "../js/helpers";
 import Globals from "../js/globals";
 import ModelInfoBlock from '../react/InfoBlocks/modelinfoblock';
+import AddFaceBlock from '../react/InfoBlocks/addfaceblock';
 
 export default class SliderSection extends Component {
     constructor(props) {
@@ -93,6 +94,10 @@ export default class SliderSection extends Component {
                                 <div className="summary-model">
                                     <div>
                                         <ModelInfoBlock model_info={model_info} />
+                                        <AddFaceBlock 
+                                            model_info={model_info} 
+                                            image={pred.image}
+                                        />
                                     </div>
                                 </div>
                             </div>

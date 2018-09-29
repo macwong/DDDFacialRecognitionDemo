@@ -303,7 +303,6 @@ video.file {
 .block .block-details {
   width: calc(100% - 25px);
   padding: 0 10px;
-  display: none;
 }
 
 .top-predictions .rating {
@@ -341,7 +340,7 @@ video.file {
 
 .block li {
   list-style: none;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 .block ul, ul.fields {
@@ -853,8 +852,8 @@ strong {
 
 ul.nice-list {
   max-height: 200px;
+  max-width: 400px;
   overflow: auto;
-  margin: 10px;
   padding: 0;
   border: 2px solid #ccc;
   font-size: 16px;
@@ -863,7 +862,7 @@ ul.nice-list {
 }
 
 ul.nice-list li {
-  padding: 7px;
+  padding: 2px 10px;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
 }
