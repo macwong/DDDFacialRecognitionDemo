@@ -57,7 +57,7 @@ class App extends Component {
                     <div className="column column-one">
                         <Viewer />
                     </div>
-                    <div className="column column-two col-history hidden">
+                    <div className="column column-two col-history">
                         <History 
                             predictions={this.state.historyPredictions}
                             infoCallback={this.updateInfo.bind(this)}

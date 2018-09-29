@@ -25,7 +25,7 @@ export default class Settings extends Component {
                     <div className='field'>
                         <label className='label label-toggle' htmlFor='night-mode2'>
                         <div className='input-toggle'>
-                            <input className='input-checkbox' id='night-mode2' type='checkbox' />
+                            <input className='input-checkbox' id='night-mode2' type='checkbox' defaultChecked={true} />
                             <span className='input-toggle-handle'></span>
                         </div>
                         </label>

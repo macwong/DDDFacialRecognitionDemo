@@ -101,7 +101,7 @@
   }
 
   .breadcrumbs a.summary {
-    padding-right: 15px !important;
+    padding-right: 17px !important;
     height: 28px;
     line-height: 28px;
   }
@@ -109,7 +109,7 @@
   .breadcrumbs li:nth-child(1) a:before {
     margin-left: 0;
   }
-  
+
   .breadcrumbs a:hover {
     background: #eee;
   }
