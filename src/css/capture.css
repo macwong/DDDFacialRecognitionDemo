@@ -162,6 +162,19 @@ video.file {
     height: 210px;
 }
 
+.summary-page {
+  display: flex;
+}
+
+.summary-profile {
+  width: 180px;
+  padding: 0 10px;
+}
+
+.summary-model {
+  width: 100%;
+}
+
 .person, .profile {
   position: relative;
   background-color: white;
@@ -212,7 +225,6 @@ video.file {
 .expand-icon {
   transform: rotate(-90deg);
   transition: 150ms linear all;
-  margin-right: 15px;
 }
 
 .collapsed .expand-icon {
