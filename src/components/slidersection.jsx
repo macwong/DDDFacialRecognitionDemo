@@ -66,27 +66,31 @@ export default class SliderSection extends Component {
                 <div>
                     <Slider {...settings}>
                         <div className="box">
-                            <figure className="profile">
-                                <img className="profile-pic" src={Globals.pngSource + pred.image} />
-                                <figcaption className="caption">
-                                    <h2>{pred.pred_name}</h2>
-                                </figcaption>
-                                <img className="icon" src={Helpers.getPredictionIcon(Helpers.getIndividualPredictionInfo(pred.pred_info, pred.pred_name).distance)} />
-                            </figure>
-                            <div className="scores">
-                                <div className="Rtable Rtable--2cols Rtable--collapse">
-                                    <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Probability</h3></div>
-                                    <div className="table-cell probability Rtable-cell Rtable-cell--alignCenter">
-                                    {Helpers.getProbability(pred.probability)}
-                                    </div>
+                            <div>
+                                <figure className="profile">
+                                    <img className="profile-pic" src={Globals.pngSource + pred.image} />
+                                    <figcaption className="caption">
+                                        <h2>{pred.pred_name}</h2>
+                                    </figcaption>
+                                    <img className="icon" src={Helpers.getPredictionIcon(Helpers.getIndividualPredictionInfo(pred.pred_info, pred.pred_name).distance)} />
+                                </figure>
+                                <div>
+                                    <div className="scores">
+                                        <div className="Rtable Rtable--2cols Rtable--collapse">
+                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Probability</h3></div>
+                                            <div className="table-cell probability Rtable-cell Rtable-cell--alignCenter">
+                                            {Helpers.getProbability(pred.probability)}
+                                            </div>
 
-                                    <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Distance</h3></div>
-                                    <div className="table-cell distance Rtable-cell Rtable-cell--alignCenter">
-                                {pred.distance.toFixed(2)}
+                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Distance</h3></div>
+                                            <div className="table-cell distance Rtable-cell Rtable-cell--alignCenter">
+                                        {pred.distance.toFixed(2)}
+                                            </div>
+                                        </div>
                                     </div>
+                                    <ModelInfoBlock model_info={model_info} />
                                 </div>
                             </div>
-                            <ModelInfoBlock model_info={model_info} />
                         </div>
                         <div className="box">
                             Input: Original snapshot image
