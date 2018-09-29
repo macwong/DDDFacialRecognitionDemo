@@ -212,6 +212,7 @@ video.file {
 .expand-icon {
   transform: rotate(-90deg);
   transition: 150ms linear all;
+  margin-right: 15px;
 }
 
 .collapsed .expand-icon {
@@ -219,7 +220,7 @@ video.file {
 }
 
 .expandable {
-  padding: 7px 5px 0 5px;
+  padding: 10px 5px 3px 5px;
   cursor: pointer;
 }
 
@@ -288,7 +289,8 @@ video.file {
 }
 
 .block .block-details {
-  width: 100%;
+  width: calc(100% - 25px);
+  padding: 0 10px;
   display: none;
 }
 
