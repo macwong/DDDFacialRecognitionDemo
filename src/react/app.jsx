@@ -32,7 +32,7 @@ class App extends Component {
 
         this.$resultsOverlay = null;
         this.isVideo = false;
-        this.verbose = false;
+        this.verbose = true;
         this.currentImages = [];
         this.predictionHistory = {};
 

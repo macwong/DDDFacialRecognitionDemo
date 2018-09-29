@@ -878,13 +878,13 @@ ul.nice-list li:nth-child(even) {
 }
 
 .info-overlay header {
-  background-color: white;
-  border-bottom: solid 1px #373a47;
+  background-color: #373a47;
+  /* border-bottom: solid 1px #373a47; */
 }
 
 .info-overlay header .title {
   margin-left: 20px;
-  color: #373a47;
+  color: white;
 }
 
 /* 1. Ensure this sits above everything when visible */
