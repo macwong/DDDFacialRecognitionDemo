@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import VideoInput from '../../components/videoinput';
 
 export default class Settings extends Component {
     render() {
@@ -29,6 +30,12 @@ export default class Settings extends Component {
                             <span className='input-toggle-handle'></span>
                         </div>
                         </label>
+                    </div>
+                </div>
+                <div>
+                    <label className="setting-label">Video Input:</label>
+                    <div className="video-input">
+                        <VideoInput />
                     </div>
                 </div>
             </div>
