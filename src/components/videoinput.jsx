@@ -27,14 +27,14 @@ export default class VideoInput extends Component {
 
     render() {
         return (
-            <select>
+            <select className="videoInput">
                 {
                     this.state.devices.map((value, index) => {
                         return (
                             <option 
                                 key={value.deviceId} 
-                                value={value.deviceId} 
-                                selected={value.deviceId === Globals.defaultDeviceId}
+                                value={value.deviceId}
+                                selected={value.deviceId === Globals.defaultDeviceId} 
                             >  
                                 {value.label}
                             </option>

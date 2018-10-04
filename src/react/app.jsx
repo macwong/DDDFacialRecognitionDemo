@@ -91,6 +91,11 @@ class App extends Component {
         this.$resultsOverlay = this.$resultsContainer.find(".resultsOverlay");
 
         this.initApp();
+
+        $(document).find(".videoInput").change((e) => {
+            const $videoInput = $(e.currentTarget);
+            this.getVideoStream();
+        });
     
         $(document).find(".input-checkbox").change((e) => {
             let $inputCheckbox = $(e.currentTarget);
@@ -246,30 +251,22 @@ class App extends Component {
     }
     
     getVideoStream() {
-        const deviceInfo = navigator.mediaDevices.enumerateDevices();
+        let $videoInput = $(document).find(".videoInput");
 
-        let videoOptions = undefined;
+        let videoOptions = {
+            advanced: [{
+                deviceId: $videoInput.val().toString()
+            }]
+        };
 
-        deviceInfo.then((value) => {
-            const videoDevice = value.find(d => d.deviceId === Globals.defaultDeviceId);
-
-            if (videoDevice !== undefined) {
-                videoOptions = {
-                    advanced: [{
-                        deviceId: Globals.defaultDeviceId
-                    }]
-                };
-            }
-
-            navigator.mediaDevices.getUserMedia({ video: videoOptions === undefined ? true : videoOptions }).then((stream) => {
-                this.videoEl.src = URL.createObjectURL(stream);
-        
-                this.videoEl.onloadedmetadata = (e) => {
-                    this.captureImage();
-                };
-            }).catch(() =>  {
-                alert('could not connect stream');
-            });
+        navigator.mediaDevices.getUserMedia({ video: videoOptions }).then((stream) => {
+            this.videoEl.src = URL.createObjectURL(stream);
+    
+            this.videoEl.onloadedmetadata = (e) => {
+                this.captureImage();
+            };
+        }).catch(() =>  {
+            alert('could not connect stream');
         });
     }
 
