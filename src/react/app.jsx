@@ -246,14 +246,30 @@ class App extends Component {
     }
     
     getVideoStream() {
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-            this.videoEl.src = URL.createObjectURL(stream);
-    
-            this.videoEl.onloadedmetadata = (e) => {
-                this.captureImage();
-            };
-        }).catch(() =>  {
-            alert('could not connect stream');
+        const deviceInfo = navigator.mediaDevices.enumerateDevices();
+
+        let videoOptions = undefined;
+
+        deviceInfo.then((value) => {
+            const videoDevice = value.find(d => d.deviceId === Globals.defaultDeviceId);
+
+            if (videoDevice !== undefined) {
+                videoOptions = {
+                    advanced: [{
+                        deviceId: Globals.defaultDeviceId
+                    }]
+                };
+            }
+
+            navigator.mediaDevices.getUserMedia({ video: videoOptions === undefined ? true : videoOptions }).then((stream) => {
+                this.videoEl.src = URL.createObjectURL(stream);
+        
+                this.videoEl.onloadedmetadata = (e) => {
+                    this.captureImage();
+                };
+            }).catch(() =>  {
+                alert('could not connect stream');
+            });
         });
     }
 

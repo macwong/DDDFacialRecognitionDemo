@@ -31,4 +31,8 @@ export default class Globals {
     static get defaultHeight() {
         return 480;
     }
+
+    static get defaultDeviceId() {
+        return "ae751e18cbd2b423e9829b6775b8c413127c75951f5db148a139460dd9ebd726";
+    }
 }

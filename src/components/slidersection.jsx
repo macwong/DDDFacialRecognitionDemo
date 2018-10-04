@@ -52,7 +52,6 @@ export default class SliderSection extends Component {
             },
             dots: true,
             dotsClass: "cf breadcrumbs inner",
-            fade: true,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
