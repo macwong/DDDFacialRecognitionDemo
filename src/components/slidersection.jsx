@@ -119,26 +119,51 @@ export default class SliderSection extends Component {
                         <div className="f-table-row">
                                 <div className="f-table-cell">
                                     <div className="f-table-cell-item">
-                                        My subject
+                                        <img src={Globals.pngSource + pred.image} />
+                                    </div>
+                                </div>
+
+                                <div className="f-table-cell f-table-measure-right">
+                                    <div className="f-table-cell-item">
+                                    </div>
+                                </div>
+
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item f-table-text-right">
+                                        160px
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div className="f-table-row">
+                                <div className="f-table-cell f-table-measure-bottom">
+                                    <div className="f-table-cell-item">
+                                        
                                     </div>
                                 </div>
 
                                 <div className="f-table-cell">
                                     <div className="f-table-cell-item">
-                                        My subject
+                                    </div>
+                                </div>
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
                                     </div>
                                 </div>
                             </div>
                             <div className="f-table-row">
                                 <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
-                                        My subject
+                                    <div className="f-table-cell-item f-table-cell-text-bottom">
+                                        160px
                                     </div>
                                 </div>
 
                                 <div className="f-table-cell">
                                     <div className="f-table-cell-item">
-                                        My subject
+                                    </div>
+                                </div>
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
                                     </div>
                                 </div>
                             </div>
