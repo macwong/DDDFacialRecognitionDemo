@@ -4,6 +4,7 @@ import Helpers from "../js/helpers";
 import Globals from "../js/globals";
 import ModelInfoBlock from '../react/InfoBlocks/modelinfoblock';
 import AddFaceBlock from '../react/InfoBlocks/addfaceblock';
+import TopPredictionsBlock from '../react/InfoBlocks/toppredictionsblock';
 
 export default class SliderSection extends Component {
     constructor(props) {
@@ -178,7 +179,52 @@ export default class SliderSection extends Component {
                             </div>
                         </div>
                         <div className="box">
-                            Predict: Final result
+                            <TopPredictionsBlock pred_info={pred.pred_info} />
+                            {/* <div className="top-predictions">
+                            {
+                                pred.pred_info.map((infoItem, index) => {
+                                    let rating = Helpers.getRating(infoItem.distance);
+                                    let imgSrc = Helpers.getPredictionIcon(infoItem.distance);
+
+                                    return (
+                                    <div key={index + 1} className="row">
+                                        <div className="top-name">
+                                            <span className="top-name-heading">{(index + 1) + ". " + infoItem.name}</span>
+                                            <span className="rating">
+                                            {
+                                                [...Array(rating).keys()].map((val) => {
+                                                    return <img key={val} src={imgSrc} />
+                                                })
+                                            }
+                                            </span>
+                                        </div>
+                                        <div className="more">
+                                            <div className="top-scores">
+                                                <ul>
+                                                    <li>
+                                                        <label>Probability:</label><span className="probability">{Helpers.getProbability(infoItem.probability)}</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Distance:</label><span className="distance">{infoItem.distance.toFixed(2)}</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div className="training-container">
+                                                <label>Training Images:</label>
+                                                <div className="training-images">
+                                                {
+                                                    infoItem.photo_path.map((photo, index) => {
+                                                        return <img key={index} src={photo} />
+                                                    })
+                                                }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    );
+                                })
+                            }
+                            </div> */}
                         </div>
                     </Slider>
                 </div>

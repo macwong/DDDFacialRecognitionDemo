@@ -30,14 +30,6 @@ export default class TopPredictionsBlock extends Component {
                             </span>
                         </div>
                         <div className="more">
-                            <label>Training Images:</label>
-                            <div className="training-images">
-                            {
-                                infoItem.photo_path.map((photo, index) => {
-                                    return <img key={index} src={photo} />
-                                })
-                            }
-                            </div>
                             <div className="top-scores">
                                 <ul>
                                     <li>
@@ -47,6 +39,16 @@ export default class TopPredictionsBlock extends Component {
                                         <label>Distance:</label><span className="distance">{infoItem.distance.toFixed(2)}</span>
                                     </li>
                                 </ul>
+                            </div>
+                            <div className="training-container">
+                                <label>Training Images:</label>
+                                <div className="training-images">
+                                {
+                                    infoItem.photo_path.map((photo, index) => {
+                                        return <img key={index} src={photo} />
+                                    })
+                                }
+                                </div>
                             </div>
                         </div>
                     </div>
