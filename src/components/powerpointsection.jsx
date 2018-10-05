@@ -19,29 +19,7 @@ export default class PowerpointSection extends Component {
             <div id={this.props.section} className={"powerpoint-section " + this.props.cssClass}>
             <div>
                 <Slider {...settings}>
-                    <Slide>
-                        <div className="row header">
-                           <h1>Header</h1>
-                        </div>
-                        <div className="row content">
-                            <p>
-                            <b>content</b>
-                            (fills remaining space)
-                            </p>
-                        </div>
-                        <div className="row footer">
-                            <p><b>footer</b> (fixed height)</p>
-                        </div>
-                    </Slide>
-                    <Slide>
-                        Test 2
-                    </Slide>
-                    <Slide>
-                        Test 3
-                    </Slide>
-                    <Slide>
-                        Test 4
-                    </Slide>
+                    {this.props.children}
                 </Slider>
             </div>
         </div>

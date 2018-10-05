@@ -7,6 +7,7 @@ import Globals from '../js/globals';
 import Welcome from '../containers/welcome';
 import App from '../react/app';
 import PowerpointSection from '../components/powerpointsection';
+import Slide from '../components/slide';
 
 class PimpedMenu extends Component {
     constructor(props) {
@@ -33,12 +34,31 @@ class PimpedMenu extends Component {
                         <PowerpointSection 
                             section={Globals.sectionIDs.basicconcepts} 
                             cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} 
-                        />
-
-                        {/* <SliderSection 
-                            section={Globals.sectionIDs.stuff} 
-                            cssClass={this.showHideSection(Globals.sectionIDs.stuff)}
-                        /> */}
+                        >
+                            <Slide>
+                                <div className="row header">
+                                <h1>Header</h1>
+                                </div>
+                                <div className="row content">
+                                    <p>
+                                    <b>content</b>
+                                    (fills remaining space)
+                                    </p>
+                                </div>
+                                <div className="row footer">
+                                    <p><b>footer</b> (fixed height)</p>
+                                </div>
+                            </Slide>
+                            <Slide>
+                                Test 2
+                            </Slide>
+                            <Slide>
+                                Test 3
+                            </Slide>
+                            <Slide>
+                                Test 4
+                            </Slide>
+                        </PowerpointSection>
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
                         </div>
