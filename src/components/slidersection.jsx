@@ -160,7 +160,22 @@ export default class SliderSection extends Component {
                         </section>
                         </div>
                         <div className="box">
-                            Convert: Embeddings
+                            <div className="embeddings">
+                            {
+                                pred.embeddings.map((emb, index) => {
+                                    emb = emb.toFixed(5);
+                                    let embDisplay = emb.toString();
+
+                                    if (emb > 0) {
+                                        embDisplay = " " + embDisplay;
+                                    }
+
+                                    return (
+                                        <span key={index} className="emb">{embDisplay}</span>
+                                    );
+                                })
+                            }
+                            </div>
                         </div>
                         <div className="box">
                             Predict: Final result

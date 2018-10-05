@@ -286,8 +286,12 @@ video.file {
   margin-bottom: 5px;
 }
 
+.embeddings {
+  overflow-y: auto;
+}
+
 .embeddings .emb {
-  padding: 5px;
+  padding: 2px 7px;
   line-height: 25px;
   display: inline-block;
   max-width: 70px;
