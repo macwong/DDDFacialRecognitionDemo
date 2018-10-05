@@ -3,7 +3,8 @@ export default class Globals {
         return {
             welcome: "welcome",
             introduction: "introduction",
-            basicconcepts: "basicfeatures",
+            basicconcepts: "basicconcepts",
+            features: "features",
             facialrecognitionpipeline: "facialrecognitionpipeline",
             facedetection: "facedetection",
             facenet: "facenet",
