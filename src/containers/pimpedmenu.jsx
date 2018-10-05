@@ -51,13 +51,18 @@ class PimpedMenu extends Component {
                                 </div>
                             </Slide>
                             <Slide>
-                                Test 2
-                            </Slide>
-                            <Slide>
-                                Test 3
-                            </Slide>
-                            <Slide>
-                                Test 4
+                                <div className="row header">
+                                    <h1>Header</h1>
+                                </div>
+                                <div className="row content">
+                                    <ul>
+                                        <li>First point</li>
+                                        <li>Second point</li>
+                                        <li>Third point</li>
+                                    </ul>
+                                </div>
+                                <div className="row footer">
+                                </div>
                             </Slide>
                         </PowerpointSection>
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>

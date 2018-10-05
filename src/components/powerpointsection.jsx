@@ -10,7 +10,8 @@ export default class PowerpointSection extends Component {
         const settings = {
             speed: 500,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            infinite: false
         };
 
         return (

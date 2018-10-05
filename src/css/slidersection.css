@@ -46,10 +46,12 @@
     margin-right: 15px;
     font-family: 'FontAwesome';
     font-size: 0.75em;
+    vertical-align: 2px;
   }
 
   .box .row.content li {
     padding: 20px 10px;
+    list-style: none;
   }
   
   .box .row.footer {
