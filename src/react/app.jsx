@@ -373,7 +373,14 @@ class App extends Component {
             }
         }).fail((jqXHR, textStatus, errorThrown) => {
             Helpers.clearOverlay(this.$resultsOverlay);
-            this.updatePredictions(null, false, jqXHR.responseJSON.error);
+
+            let error = "Please select image";
+
+            if (jqXHR.responseJSON !== undefined) {
+                error = jqXHR.responseJSON.error;
+            }
+
+            this.updatePredictions(null, false, error);
     
             if (this.isVideo) {
                 this.captureImage();
