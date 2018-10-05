@@ -190,6 +190,87 @@
   .breadcrumbs li:last-child .breadcrumb-description {
     padding-right: 20px;
   }
+
+  .f-table {
+    display: flex;
+    flex-flow: column nowrap;
+    /*set flex direction to column and no wrap on table*/
+  }
+  
+  .f-table-row + .f-table-row .f-table-cell-header {
+    display: none;
+  }
+  
+  .f-table-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .f-table-cell {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .f-table-cell div {
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888,
+    1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset; */
+  }
+  
+  .f-table-cell-header {
+    flex: 0 1 20px;
+  }
+  
+  .f-table-cell-item {
+    color: #888;
+    flex: 1 1 auto;
+  }
+  
+  .truncate {
+    min-width: 1px;
+  }
+  
+  .truncate div {
+    white-space: nowrap;
+  }
+  
+  .wrap {
+    max-width: 200px;
+    min-width: 60px;
+    white-space: normal;
+  }
+  
+  .wrap div {
+    text-overflow: unset;
+    white-space: normal;
+  }
+  
+  .canton {
+    font-size: 14px;
+  }
+  
+  @media only screen and (max-width:400px) {
+    .f-table-row + .f-table-row .f-table-cell-header {
+      display: block;
+    }
+    .f-table-row {
+      flex-direction: column;
+      box-shadow: 1px 0 0 0 #888, 0 1px 0 0 #888, 1px 1px 0 0 #888, /* Just to fix the corner */
+      1px 0 0 0 #888 inset, 0 1px 0 0 #888 inset;
+    }
+    .f-table-cell div {
+      box-shadow: none;
+    }
+    .canton {
+      display: none;
+    }
+    .wrap {
+      max-width: 1000px;
+    }
+  }
   
   @media (max-width: 720px) {
     .breadcrumbs a {

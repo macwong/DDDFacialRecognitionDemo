@@ -105,7 +105,44 @@ export default class SliderSection extends Component {
                             <img className="original-image" src={Globals.pngSource + pred.original_image} />
                         </div>
                         <div className="box">
-                            Find Face: Cropped snapshot
+                            {/* <div>
+                                <div>
+                                    <img src={Globals.pngSource + pred.image} />
+                                    <div>right</div>
+                                </div>
+                                <div>
+                                    <div>bottom</div>
+                                    <div>bottom</div>
+                                </div>
+                            </div> */}
+                        <section className="f-table">
+                        <div className="f-table-row">
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
+                                        My subject
+                                    </div>
+                                </div>
+
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
+                                        My subject
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="f-table-row">
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
+                                        My subject
+                                    </div>
+                                </div>
+
+                                <div className="f-table-cell">
+                                    <div className="f-table-cell-item">
+                                        My subject
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         </div>
                         <div className="box">
                             Convert: Embeddings
