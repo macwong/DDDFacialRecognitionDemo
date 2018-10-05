@@ -63,7 +63,7 @@ export default class SliderSection extends Component {
 
         return (
             <div id={this.props.section} className={"slider-section " + this.props.cssClass}>
-                <div>
+                <div className="pipeline">
                     <Slider {...settings}>
                         <div className="box">
                             <div className="summary-page">

@@ -7,13 +7,14 @@
     flex-direction: column;
 }
 
-.slick-list {
-  height: calc(100vh - 200px);
-}
-
   .box {
     display: flex;
     flex-flow: column;
+    height: calc(100vh - 100px);
+  }
+
+  .pipeline .box {
+    height: calc(100vh - 200px);
   }
 
   .box .row {
