@@ -42,8 +42,10 @@
   }
   
   .box .row.content li:before {
-    content: '»';
+    content: '\f118';
     margin-right: 15px;
+    font-family: 'FontAwesome';
+    font-size: 0.75em;
   }
 
   .box .row.content li {

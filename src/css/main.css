@@ -56,6 +56,11 @@ header {
 
 
 @font-face {
+  font-family: 'FontAwesome';
+  src: url('../../fonts/fa-solid-900.ttf');
+}
+
+@font-face {
   font-family: 'Comfortaa-Bold';
   src: url('../../fonts/Comfortaa-Bold.ttf');
 }
