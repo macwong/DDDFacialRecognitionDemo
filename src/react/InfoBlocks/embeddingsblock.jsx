@@ -11,7 +11,7 @@ export default class EmbeddingsBlock extends Component {
         
         if (embeddings) {
             return (
-                <Block title="Embeddings" containerClass="embeddings">
+                <Block title={"FaceNet Embeddings (" + embeddings.length + " dimensions)"} containerClass="embeddings">
                 {
                     embeddings.map((emb, index) => {
                         emb = emb.toFixed(5);
