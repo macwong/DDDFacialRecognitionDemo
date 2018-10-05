@@ -101,20 +101,10 @@ export default class SliderSection extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div className="box centre">
                             <img className="original-image" src={Globals.pngSource + pred.original_image} />
                         </div>
-                        <div className="box">
-                            {/* <div>
-                                <div>
-                                    <img src={Globals.pngSource + pred.image} />
-                                    <div>right</div>
-                                </div>
-                                <div>
-                                    <div>bottom</div>
-                                    <div>bottom</div>
-                                </div>
-                            </div> */}
+                        <div className="box centre">
                         <section className="f-table">
                         <div className="f-table-row">
                                 <div className="f-table-cell">

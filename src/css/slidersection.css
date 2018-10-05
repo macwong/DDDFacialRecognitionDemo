@@ -8,13 +8,19 @@
 }
 
   .box {
-    display: flex;
+    display: flex !important;
     flex-flow: column;
     height: calc(100vh - 100px);
   }
 
   .pipeline .box {
     height: calc(100vh - 200px);
+  }
+
+  .box.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .box .row {
