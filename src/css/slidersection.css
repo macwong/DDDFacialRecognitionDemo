@@ -40,6 +40,10 @@
     flex: 0 1 40px;
   }
   
+  .predictions-section {
+    display: flex;
+  }
+
   .slick-prev:before, .slick-next:before {
     color: #373a47;
     opacity: 1;
