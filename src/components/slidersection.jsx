@@ -5,6 +5,7 @@ import Globals from "../js/globals";
 import ModelInfoBlock from '../react/InfoBlocks/modelinfoblock';
 import AddFaceBlock from '../react/InfoBlocks/addfaceblock';
 import TopPredictionsBlock from '../react/InfoBlocks/toppredictionsblock';
+import SummaryProfile from './summaryprofile';
 
 export default class SliderSection extends Component {
     constructor(props) {
@@ -68,29 +69,7 @@ export default class SliderSection extends Component {
                     <Slider {...settings}>
                         <div className="box">
                             <div className="summary-page">
-                                <div className="summary-profile">
-                                    <figure className="profile">
-                                        <img className="profile-pic" src={Globals.pngSource + pred.image} />
-                                        <figcaption className="caption">
-                                            <h2>{pred.pred_name}</h2>
-                                        </figcaption>
-                                        <img className="icon" src={Helpers.getPredictionIcon(Helpers.getIndividualPredictionInfo(pred.pred_info, pred.pred_name).distance)} />
-                                    </figure>
-                                    <div className="scores">
-                                        <div className="Rtable Rtable--1col Rtable--collapse">
-                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Probability</h3></div>
-                                            <div className="table-cell probability Rtable-cell Rtable-cell--alignCenter">
-                                                {Helpers.getProbability(pred.probability)}
-                                            </div>
-                                        </div>
-                                        <div className="Rtable Rtable--1col Rtable--collapse">
-                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Distance</h3></div>
-                                            <div className="table-cell distance Rtable-cell Rtable-cell--alignCenter">
-                                                {pred.distance.toFixed(2)}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <SummaryProfile pred={pred} />
                                 <div className="summary-model">
                                     <div>
                                         <ModelInfoBlock model_info={model_info} />
@@ -180,29 +159,7 @@ export default class SliderSection extends Component {
                         </div>
                         <div className="box">
                             <div className="predictions-section">
-                                <div className="summary-profile">
-                                    <figure className="profile">
-                                        <img className="profile-pic" src={Globals.pngSource + pred.image} />
-                                        <figcaption className="caption">
-                                            <h2>{pred.pred_name}</h2>
-                                        </figcaption>
-                                        <img className="icon" src={Helpers.getPredictionIcon(Helpers.getIndividualPredictionInfo(pred.pred_info, pred.pred_name).distance)} />
-                                    </figure>
-                                    <div className="scores">
-                                        <div className="Rtable Rtable--1col Rtable--collapse">
-                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Probability</h3></div>
-                                            <div className="table-cell probability Rtable-cell Rtable-cell--alignCenter">
-                                                {Helpers.getProbability(pred.probability)}
-                                            </div>
-                                        </div>
-                                        <div className="Rtable Rtable--1col Rtable--collapse">
-                                            <div className="table-header Rtable-cell Rtable-cell--alignCenter"><h3>Distance</h3></div>
-                                            <div className="table-cell distance Rtable-cell Rtable-cell--alignCenter">
-                                                {pred.distance.toFixed(2)}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <SummaryProfile pred={pred} />
                                 <TopPredictionsBlock pred_info={pred.pred_info} />
                             </div>
                         </div>
