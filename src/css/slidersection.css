@@ -38,6 +38,16 @@
   
   .box .row.content {
     flex: 1 1 auto;
+    font-size: 1.5em;
+  }
+  
+  .box .row.content li:before {
+    content: '»';
+    margin-right: 15px;
+  }
+
+  .box .row.content li {
+    padding: 20px 10px;
   }
   
   .box .row.footer {

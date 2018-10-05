@@ -37,16 +37,17 @@ class PimpedMenu extends Component {
                         >
                             <Slide>
                                 <div className="row header">
-                                <h1>Header</h1>
+                                    <h1>Header</h1>
                                 </div>
                                 <div className="row content">
-                                    <p>
-                                    <b>content</b>
-                                    (fills remaining space)
-                                    </p>
+                                    <ul>
+                                        <li>First point</li>
+                                        <li>Second point</li>
+                                        <li>Third point</li>
+                                    </ul>
                                 </div>
                                 <div className="row footer">
-                                    <p><b>footer</b> (fixed height)</p>
+                                    Footer
                                 </div>
                             </Slide>
                             <Slide>

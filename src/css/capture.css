@@ -748,6 +748,9 @@ h5,
 h6 {
   margin-top: 0;
 }
+h1 {
+  font-size: 2em;
+}
 h3 {
   font-size: 1.4em;
 }

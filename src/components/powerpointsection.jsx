@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
-import Slide from './slide';
-import EmbeddingsBlock from '../react/InfoBlocks/embeddingsblock';
 
 export default class PowerpointSection extends Component {
     constructor(props) {
