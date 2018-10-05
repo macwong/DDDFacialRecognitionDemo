@@ -8,6 +8,7 @@ import Welcome from '../containers/welcome';
 import App from '../react/app';
 import PowerpointSection from '../components/powerpointsection';
 import Slide from '../components/slide';
+import IntroSlides from '../components/slides/01 - intro';
 
 class PimpedMenu extends Component {
     constructor(props) {
@@ -31,40 +32,10 @@ class PimpedMenu extends Component {
                     </header>
                     <section className="sections">
                         <Welcome cssClass={this.showHideSection(Globals.sectionIDs.welcome)} />
-                        <PowerpointSection 
-                            section={Globals.sectionIDs.basicconcepts} 
-                            cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} 
-                        >
-                            <Slide>
-                                <div className="row header">
-                                    <h1>Header</h1>
-                                </div>
-                                <div className="row content">
-                                    <ul>
-                                        <li>First point</li>
-                                        <li>Second point</li>
-                                        <li>Third point</li>
-                                    </ul>
-                                </div>
-                                <div className="row footer">
-                                    Footer
-                                </div>
-                            </Slide>
-                            <Slide>
-                                <div className="row header">
-                                    <h1>Header</h1>
-                                </div>
-                                <div className="row content">
-                                    <ul>
-                                        <li>First point</li>
-                                        <li>Second point</li>
-                                        <li>Third point</li>
-                                    </ul>
-                                </div>
-                                <div className="row footer">
-                                </div>
-                            </Slide>
-                        </PowerpointSection>
+                        <IntroSlides
+                            section={Globals.sectionIDs.introduction}
+                            cssClass={this.showHideSection(Globals.sectionIDs.introduction)}
+                        />
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
                         </div>
