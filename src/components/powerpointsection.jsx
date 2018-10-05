@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Slider from 'react-slick';
 import Slide from './slide';
+import EmbeddingsBlock from '../react/InfoBlocks/embeddingsblock';
 
 export default class PowerpointSection extends Component {
     constructor(props) {
@@ -20,9 +21,7 @@ export default class PowerpointSection extends Component {
                 <Slider {...settings}>
                     <Slide>
                         <div className="row header">
-                            <p><b>header</b>
-                            <br />
-                            <br />(sized to content)</p>
+                           <h1>Header</h1>
                         </div>
                         <div className="row content">
                             <p>

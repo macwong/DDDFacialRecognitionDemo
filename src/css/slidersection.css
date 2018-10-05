@@ -23,6 +23,10 @@
     align-items: center;
   }
 
+  .powerpoint-section .row {
+    border: none;
+  }
+
   .box .row.header {
     flex: 0 1 auto;
     /* The above is shorthand for:
