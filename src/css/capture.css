@@ -1052,3 +1052,7 @@ ul.nice-list li:nth-child(even) {
 .loading .loading-message {
   z-index: 11;  
 }
+
+.original-image {
+  margin: 0 auto;
+}

@@ -102,7 +102,7 @@ export default class SliderSection extends Component {
                             </div>
                         </div>
                         <div className="box">
-                            Input: Original snapshot image
+                            <img className="original-image" src={Globals.pngSource + pred.original_image} />
                         </div>
                         <div className="box">
                             Find Face: Cropped snapshot
