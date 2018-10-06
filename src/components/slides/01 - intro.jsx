@@ -19,10 +19,10 @@ export default class IntroSlides extends Component {
                     </div>
                     <div className="row content">
                         <ul>
-                            <li>Basic concepts and features</li>
-                            <li>Pipeline</li>
+                            <li>Concepts and features</li>
+                            <li>Facial recognition pipeline</li>
                             <li>Potential issues</li>
-                            <li>Technologies and resources</li>
+                            <li>Technologies / resources</li>
                         </ul>
                     </div>
                     <div className="row footer">

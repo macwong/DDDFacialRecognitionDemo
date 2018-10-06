@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import PimpedMenu from '../src/containers/pimpedmenu';
+import PimpedMenu from './containers/pimpedmenu';
 import reducers from './reducers/root';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);

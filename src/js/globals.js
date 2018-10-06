@@ -4,15 +4,9 @@ export default class Globals {
             welcome: "welcome",
             introduction: "introduction",
             basicconcepts: "basicconcepts",
-            features: "features",
             facialrecognitionpipeline: "facialrecognitionpipeline",
-            facedetection: "facedetection",
-            facenet: "facenet",
-            predictionmodel: "predictionmodel",
             potentialissues: "potentialissues",
             technologies: "technologies",
-            learningpath: "learningpath",
-            resources: "resources",
             demo: "demo"
         }; 
     }
