@@ -23,6 +23,13 @@
     align-items: center;
   }
 
+  .box .centre-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .powerpoint-section .row {
     border: none;
   }

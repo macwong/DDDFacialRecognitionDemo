@@ -32,7 +32,7 @@ class NavMenu extends Component {
             { key: "Introduction", title: "Introduction", section: Globals.sectionIDs.introduction, showTitle: true },
             { key: "Basic Concepts", title: "Concepts and Features", section: Globals.sectionIDs.basicconcepts, showTitle: true },
             { key: "Facial Recogniton Pipeline", title: "Recognition Pipeline", section: Globals.sectionIDs.facialrecognitionpipeline, showTitle: true },
-            { key: "Potential Issues", title: "Use Cases and Issues", section: Globals.sectionIDs.potentialissues, showTitle: true },
+            { key: "Potential Challenges", title: "Accuracy and Performance", section: Globals.sectionIDs.challenges, showTitle: true },
             { key: "Technologies Used", title: "Technologies / Resources", section: Globals.sectionIDs.technologies, showTitle: true },
             { key: "Demo", title: "Demo", section: Globals.sectionIDs.demo, showTitle: true }
         ];

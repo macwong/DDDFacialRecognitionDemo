@@ -6,7 +6,7 @@ export default class Globals {
             basicconcepts: "basicconcepts",
             facialrecognitionpipeline: "facialrecognitionpipeline",
             technologies: "technologies",
-            potentialissues: "potentialissues",
+            challenges: "challenges",
             demo: "demo"
         }; 
     }

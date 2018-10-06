@@ -21,7 +21,7 @@ export default class IntroSlides extends Component {
                         <ul>
                             <li>Concepts and features</li>
                             <li>Recognition pipeline</li>
-                            <li>Use cases and issues</li>
+                            <li>Accuracy and Performance</li>
                             <li>Technologies / resources</li>
                             <li>Live demo</li>
                         </ul>

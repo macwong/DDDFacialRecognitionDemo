@@ -8,7 +8,7 @@ import App from '../react/app';
 import IntroSlides from '../components/slides/01 - intro';
 import BasicConceptsSlides from '../components/slides/02 - basicconcepts';
 import PipelineSlides from '../components/slides/03 - pipeline';
-import IssuesSlides from '../components/slides/04 - issues';
+import ChallengeSlides from '../components/slides/04 - issues';
 import TechnologiesSlides from '../components/slides/05 - technologies';
 
 class PimpedMenu extends Component {
@@ -36,7 +36,7 @@ class PimpedMenu extends Component {
                         <IntroSlides section={Globals.sectionIDs.introduction} cssClass={this.showHideSection(Globals.sectionIDs.introduction)} />
                         <BasicConceptsSlides section={Globals.sectionIDs.basicconcepts} cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} />
                         <PipelineSlides section={Globals.sectionIDs.facialrecognitionpipeline} cssClass={this.showHideSection(Globals.sectionIDs.facialrecognitionpipeline)} />
-                        <IssuesSlides section={Globals.sectionIDs.potentialissues} cssClass={this.showHideSection(Globals.sectionIDs.potentialissues)} />
+                        <ChallengeSlides section={Globals.sectionIDs.challenges} cssClass={this.showHideSection(Globals.sectionIDs.challenges)} />
                         <TechnologiesSlides section={Globals.sectionIDs.technologies} cssClass={this.showHideSection(Globals.sectionIDs.technologies)} />
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
