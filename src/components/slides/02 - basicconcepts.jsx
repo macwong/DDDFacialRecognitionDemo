@@ -46,7 +46,7 @@ export default class BasicConceptsSlides extends Component {
                 </Slide>
                 <Slide>
                     <div className="row header">
-                        <h1>APIs</h1>
+                        <h1>Implementation Options?</h1>
                     </div>
                     <div className="row content">
                         <ul>
