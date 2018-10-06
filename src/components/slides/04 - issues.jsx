@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
 
-export default class TechnologiesSlides extends Component {
+export default class IssuesSlides extends Component {
     constructor(props) {
         super(props);
     }
@@ -15,7 +15,21 @@ export default class TechnologiesSlides extends Component {
         >
             <Slide>
                 <div className="row header">
-                    <h1>Header</h1>
+                    <h1>Potential Issues</h1>
+                </div>
+                <div className="row content">
+                    <ul>
+                        <li>First point</li>
+                        <li>Second point</li>
+                        <li>Third point</li>
+                    </ul>
+                </div>
+                <div className="row footer">
+                </div>
+            </Slide>
+            <Slide>
+                <div className="row header">
+                    <h1>Use Cases</h1>
                 </div>
                 <div className="row content">
                     <ul>
@@ -26,20 +40,6 @@ export default class TechnologiesSlides extends Component {
                 </div>
                 <div className="row footer">
                     Footer
-                </div>
-            </Slide>
-            <Slide>
-                <div className="row header">
-                    <h1>Header</h1>
-                </div>
-                <div className="row content">
-                    <ul>
-                        <li>First point</li>
-                        <li>Second point</li>
-                        <li>Third point</li>
-                    </ul>
-                </div>
-                <div className="row footer">
                 </div>
             </Slide>
         </PowerpointSection>

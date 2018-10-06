@@ -15,7 +15,17 @@ export default class PipelineSlides extends Component {
         >
             <Slide>
                 <div className="row header">
-                    <h1>Header</h1>
+                    <h1>Pipeline - Demo</h1>
+                </div>
+                <div className="row content">
+                    Demo...
+                </div>
+                <div className="row footer">
+                </div>
+            </Slide>
+            <Slide>
+                <div className="row header">
+                    <h1>1. Initial Input</h1>
                 </div>
                 <div className="row content">
                     <ul>
@@ -25,12 +35,39 @@ export default class PipelineSlides extends Component {
                     </ul>
                 </div>
                 <div className="row footer">
-                    Footer
                 </div>
             </Slide>
             <Slide>
                 <div className="row header">
-                    <h1>Header</h1>
+                    <h1>2. Face Detection</h1>
+                </div>
+                <div className="row content">
+                    <ul>
+                        <li>First point</li>
+                        <li>Second point</li>
+                        <li>Third point</li>
+                    </ul>
+                </div>
+                <div className="row footer">
+                </div>
+            </Slide>
+            <Slide>
+                <div className="row header">
+                    <h1>3. FaceNet Conversion</h1>
+                </div>
+                <div className="row content">
+                    <ul>
+                        <li>First point</li>
+                        <li>Second point</li>
+                        <li>Third point</li>
+                    </ul>
+                </div>
+                <div className="row footer">
+                </div>
+            </Slide>
+            <Slide>
+                <div className="row header">
+                    <h1>4. Prediction</h1>
                 </div>
                 <div className="row content">
                     <ul>

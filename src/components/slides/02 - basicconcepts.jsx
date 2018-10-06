@@ -15,7 +15,7 @@ export default class BasicConceptsSlides extends Component {
         >
             <Slide>
                 <div className="row header">
-                    <h1>Header</h1>
+                    <h1>Concepts</h1>
                 </div>
                 <div className="row content">
                     <ul>
@@ -30,7 +30,7 @@ export default class BasicConceptsSlides extends Component {
             </Slide>
             <Slide>
                 <div className="row header">
-                    <h1>Header</h1>
+                    <h1>Features</h1>
                 </div>
                 <div className="row content">
                     <ul>
