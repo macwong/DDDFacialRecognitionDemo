@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
+import DemoSlide from './demoslide';
 
 export default class BasicConceptsSlides extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ export default class BasicConceptsSlides extends Component {
                                 <li>Identifying a person from an image (or video frame)</li>
                             </ul>
                             <div className="centre-image" style={{height: '400px'}}>
-                                <img src="./images/facerec.png" />
+                            <img src="./images/facerec.png" />
                             </div>
                         </div>
                     </div>
@@ -77,6 +78,7 @@ export default class BasicConceptsSlides extends Component {
                     <div className="row footer">
                     </div>
                 </Slide>
+                <DemoSlide />
             </PowerpointSection>
 
         );
