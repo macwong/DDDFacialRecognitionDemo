@@ -13,7 +13,7 @@ class DemoSlide extends Component {
     }
 
     onDemoClick(e) {
-        this.props.jumpToDemo();
+        this.props.jumpToDemo("Features Demo");
     }
 
     render() {

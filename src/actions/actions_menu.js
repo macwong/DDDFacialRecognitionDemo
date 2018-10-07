@@ -39,10 +39,11 @@ export function updateMenuIsOpen(isOpen) {
     };
 }
 
-export function jumpToDemo() {
+export function jumpToDemo(title) {
     return {
         type: Actions.JUMP_TO_DEMO,
         payload: {
+            title: title
         }
     };
 }

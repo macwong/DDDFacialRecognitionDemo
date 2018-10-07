@@ -34,7 +34,7 @@ export default function(state = {}, action) {
                 currentKey: "Demo",
                 isOpen: false,
                 currentSection: Globals.sectionIDs.demo,
-                currentTitle: "Demo"
+                currentTitle: action.payload.title
             }
         }
         default: {
