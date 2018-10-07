@@ -30,4 +30,8 @@ export default class Actions {
     static get UPDATE_CSS_CLASS() {
         return "UPDATE_CSS_CLASS";
     }
+
+    static get JUMP_TO_DEMO() {
+        return "JUMP_TO_DEMO";
+    }
 }

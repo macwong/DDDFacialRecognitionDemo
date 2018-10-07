@@ -28,6 +28,15 @@ export default function(state = {}, action) {
                 currentTitle: state.currentTitle,
             }
         }
+        case Actions.JUMP_TO_DEMO: {
+            // TODO: More strongly typed version of this...
+            return {
+                currentKey: "Demo",
+                isOpen: false,
+                currentSection: Globals.sectionIDs.demo,
+                currentTitle: "Demo"
+            }
+        }
         default: {
             if (_.isEmpty(state)) {
                 return {

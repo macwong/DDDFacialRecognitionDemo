@@ -1,5 +1,6 @@
 import Actions from "../js/actionkeys";
 import Helpers from "../js/helpers";
+import Globals from "../js/globals";
 
 export function onPolaroidClick() {
     return {
@@ -34,6 +35,14 @@ export function updateMenuIsOpen(isOpen) {
         type: Actions.MENU_OPEN,
         payload: {
             isOpen: isOpen
+        }
+    };
+}
+
+export function jumpToDemo() {
+    return {
+        type: Actions.JUMP_TO_DEMO,
+        payload: {
         }
     };
 }

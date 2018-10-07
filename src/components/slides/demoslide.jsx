@@ -1,7 +1,21 @@
 import React, {Component} from 'react';
+import { jumpToDemo } from '../../actions/actions_menu';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+
 import Slide from '../slide';
 
-export default class DemoSlide extends Component {
+class DemoSlide extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onDemoClick = this.onDemoClick.bind(this);        
+    }
+
+    onDemoClick(e) {
+        this.props.jumpToDemo();
+    }
+
     render() {
         return (
             <Slide>
@@ -10,7 +24,11 @@ export default class DemoSlide extends Component {
                 </div>
                 <div className="row content">
                     <div className="centre-image" style={{width: '100%', height: 'calc(100vh - 200px)'}}>
-                        <img src="./images/livedemo.png" style={{width: '500px'}} />
+                        <img 
+                            src="./images/livedemo.png" 
+                            style={{width: '500px'}}
+                            onClick={this.onDemoClick}
+                        />
                     </div>
                 </div>
                 <div className="row footer">
@@ -19,3 +37,9 @@ export default class DemoSlide extends Component {
         );
     }
 }
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ jumpToDemo }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(DemoSlide);
