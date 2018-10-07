@@ -25,6 +25,8 @@ export default class SliderSection extends Component {
                 return "Convert";
             case 4:
                 return "Predict";
+            case 5:
+                return "Output";
             default:
                 return "Extra";
         }
@@ -68,85 +70,85 @@ export default class SliderSection extends Component {
             <div id={this.props.section} className={"slider-section " + this.props.cssClass}>
                 <div className="pipeline">
                     <Slider {...settings}>
-                        <div className="box">
+                        <div className="box centre">
                             <div className="summary-page">
                                 <SummaryProfile pred={pred} />
-                                <div className="summary-model">
-                                    <div>
-                                        <ModelInfoBlock model_info={model_info} />
-                                        <AddFaceBlock 
-                                            model_info={model_info} 
-                                            image={pred.image}
-                                        />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div className="box centre">
                             <img className="original-image" src={Globals.pngSource + pred.original_image} />
                         </div>
                         <div className="box centre">
-                        <section className="f-table">
-                        <div className="f-table-row">
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
-                                        <img src={Globals.pngSource + pred.image} />
+                            <section className="f-table">
+                                <div className="f-table-row">
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item">
+                                            <img src={Globals.pngSource + pred.image} />
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="f-table-cell f-table-measure-right">
-                                    <div className="f-table-cell-item">
+                                    <div className="f-table-cell f-table-measure-right">
+                                        <div className="f-table-cell-item">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item f-table-text-right">
-                                        160px
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item f-table-text-right">
+                                            160px
+                                        </div>
                                     </div>
+                                    
                                 </div>
-                                
-                            </div>
-                            <div className="f-table-row">
-                                <div className="f-table-cell f-table-measure-bottom">
-                                    <div className="f-table-cell-item">
-                                        
+                                <div className="f-table-row">
+                                    <div className="f-table-cell f-table-measure-bottom">
+                                        <div className="f-table-cell-item">
+                                            
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item">
+                                        </div>
+                                    </div>
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item">
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
+                                <div className="f-table-row">
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item f-table-cell-text-bottom">
+                                            160px
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="f-table-row">
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item f-table-cell-text-bottom">
-                                        160px
-                                    </div>
-                                </div>
 
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item">
+                                        </div>
+                                    </div>
+                                    <div className="f-table-cell">
+                                        <div className="f-table-cell-item">
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="f-table-cell">
-                                    <div className="f-table-cell-item">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                            </section>
                         </div>
                         <div className="box">
                             <EmbeddingsBlock embeddings={pred.embeddings} />
                         </div>
                         <div className="box">
+                            <ModelInfoBlock model_info={model_info} />
+                        </div>
+                        <div className="box">
                             <div className="predictions-section">
                                 <SummaryProfile pred={pred} />
-                                <TopPredictionsBlock pred_info={pred.pred_info} />
+                                <div className="top-predictions">
+                                    <TopPredictionsBlock pred_info={pred.pred_info} />
+                                    <AddFaceBlock 
+                                        model_info={model_info} 
+                                        image={pred.image}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </Slider>

@@ -11,7 +11,7 @@ export default class TopPredictionsBlock extends Component {
         const pred_info = this.props.pred_info;
 
         return (
-            <Block title="Top Predictions" containerClass="top-predictions">
+            <Block title="Top Predictions">
             {
                 pred_info.map((infoItem, index) => {
                     let rating = Helpers.getRating(infoItem.distance);

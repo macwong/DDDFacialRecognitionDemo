@@ -311,6 +311,7 @@ video.file {
 
 .top-predictions {
   overflow-y: auto;
+  width: calc(100% - 10px);
 }
 
 .top-predictions .rating {

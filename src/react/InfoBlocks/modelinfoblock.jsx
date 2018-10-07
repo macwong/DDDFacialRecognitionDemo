@@ -10,7 +10,7 @@ export default class ModelInfoBlock extends Component {
         const model_info = this.props.model_info;
 
         return (
-            <Block title="Model Info" containerClass="model_info">
+            <Block title="Prediction Model Info" containerClass="model_info">
             <ul>
                 <li>
                     <label>Name:</label><span className="model-name">{model_info.model_name}</span>
