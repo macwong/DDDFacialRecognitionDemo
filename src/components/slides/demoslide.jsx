@@ -26,7 +26,7 @@ class DemoSlide extends Component {
                     <div className="centre-image" style={{width: '100%', height: 'calc(100vh - 200px)'}}>
                         <img 
                             src="./images/livedemo.png" 
-                            style={{width: '500px'}}
+                            style={{width: '500px', cursor: 'pointer'}}
                             onClick={this.onDemoClick}
                         />
                     </div>
