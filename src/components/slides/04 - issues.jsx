@@ -20,7 +20,7 @@ export default class UseCaseSlides extends Component {
                 <div className="row content">
                     <div style={{width: '100%'}}>
                         <div className="centre-image" style={{marginBottom: '10px'}}>
-                            <img src="./images/scoring.png" style={{width: '100%'}} />
+                            <img src="./images/scoring.png" style={{width: '900px'}} />
                         </div>
                         <ul>
                             <li>Nearest neighbour algorithm</li>
