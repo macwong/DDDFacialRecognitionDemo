@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
+import DemoSlide from './demoslide';
 
 export default class UseCaseSlides extends Component {
     constructor(props) {
@@ -23,10 +24,10 @@ export default class UseCaseSlides extends Component {
                             <img src="./images/scoring.png" style={{width: '900px'}} />
                         </div>
                         <ul>
-                            <li>Nearest neighbour algorithm</li>
-                            <li>Compare embeddings of prediction vs known embeddings</li>
-                            <li>Example is 2-dimensional, but in reality it's 512-dimensional</li>
-                            <li>Don't need many examples of each person (one-shot learning)</li>
+                            <li>Calculate "distance"</li>
+                            <li>Anything lower than 0.75 is considered accurate</li>
+                            <li>Larger than 1.2 is rotten</li>
+                            <li>Could add "unknown" threshold</li>
                         </ul>
                     </div>
                 </div>
@@ -35,18 +36,34 @@ export default class UseCaseSlides extends Component {
             </Slide>
             <Slide>
                 <div className="row header">
-                    <h1>Performance</h1>
+                    <h1>What Causes Bad Predictions?</h1>
                 </div>
                 <div className="row content">
                     <ul>
-                        <li>First point</li>
-                        <li>Second point</li>
-                        <li>Third point</li>
+                        <li>Large quantity of people to compare against</li>
+                        <li>Bad input (e.g. bad resolution, face obscured)</li>
+                        <li>Wrong choice of algorithm for prediction</li>
+                        <li>Unknown person</li>
                     </ul>
                 </div>
                 <div className="row footer">
                 </div>
             </Slide>
+            <Slide>
+                <div className="row header">
+                    <h1>Performance Considerations</h1>
+                </div>
+                <div className="row content">
+                    <ul>
+                        <li>Hardware (e.g. GPU vs CPU)</li>
+                        <li>Amount of known people in dataset (high quantity = slower)</li>
+                        <li>Choice of algorithms for face detection, embeddings and predictions</li>
+                    </ul>
+                </div>
+                <div className="row footer">
+                </div>
+            </Slide>
+            <DemoSlide />
         </PowerpointSection>
 
         );
