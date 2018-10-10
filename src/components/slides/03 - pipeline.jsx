@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
+import DemoSlide from './demoslide';
 
 export default class PipelineSlides extends Component {
     constructor(props) {
@@ -145,6 +146,7 @@ export default class PipelineSlides extends Component {
                 <div className="row footer">
                 </div>
             </Slide>
+            <DemoSlide />
         </PowerpointSection>
 
         );
