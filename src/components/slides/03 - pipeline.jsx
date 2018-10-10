@@ -72,10 +72,10 @@ export default class PipelineSlides extends Component {
                         <div style={{display: 'flex'}}>
                             <img src="./images/mtcnn.png" style={{width: '400px', height: '320px'}} />
                             <ul>
-                                <li>MTCNN Neural Network</li>
+                                <li>MTCNN neural network</li>
                                 <li>Outputs a 160px x 160px face</li>
                                 <li>Finds key face landmarks</li>
-                                <li>Attempts to locate landmarks consistently</li>
+                                <li>Attempts to align landmarks consistently</li>
                                 <li>Consistency is key</li>
                             </ul>
                         </div>
@@ -94,8 +94,11 @@ export default class PipelineSlides extends Component {
                             <img src="./images/3 - conversion.png" />
                         </div>
                         <ul>
-                            <li>Images, video or live camera</li>
-                            <li>Can be variable in resolution and quality</li>
+                            <li>FaceNet neural network</li>
+                            <li>Converts image of face to 512 numbers (called embeddings)</li>
+                            <li>Also supports 128 and 256 dimension embeddings</li>
+                            <li>Learns how to convert image of face to embeddings via training</li>
+                            <li>Pre-trained on VGGFace2 dataset, from 3.3+ million images of faces</li>
                         </ul>
                     </div>
                 </div>
@@ -111,10 +114,14 @@ export default class PipelineSlides extends Component {
                         <div className="centre-image" style={{marginBottom: '10px'}}>
                             <img src="./images/4 - prediction.png" />
                         </div>
-                        <ul>
-                            <li>Images, video or live camera</li>
-                            <li>Can be variable in resolution and quality</li>
-                        </ul>
+                        <div style={{display: 'flex'}}>
+                            <img src="./images/neighbours.png" style={{width: '500px', height: '350px'}} />
+                            <ul>
+                                <li>Nearest neighbour algorithm</li>
+                                <li>Compare embeddings of prediction vs known embeddings</li>
+                                <li>Example is 2-dimensional, but in reality it's 512-dimensional</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="row footer">
