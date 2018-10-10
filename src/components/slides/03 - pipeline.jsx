@@ -69,15 +69,15 @@ export default class PipelineSlides extends Component {
                         <div className="centre-image" style={{marginBottom: '10px'}}>
                         <img src="./images/2 - face detection.png" />
                         </div>
-                        <div>
-                        <img src="./images/mtcnn.png" style={{width: '300px'}} />
-                        <ul>
-                            <li>Neural network: MTCNN</li>
-                            <li>Outputs a 160px x 160px face</li>
-                            <li>Finds key face landmarks</li>
-                            <li>Attempts to locate landmarks consistently</li>
-                            <li>Consistency is key</li>
-                        </ul>
+                        <div style={{display: 'flex'}}>
+                            <img src="./images/mtcnn.png" style={{width: '400px', height: '320px'}} />
+                            <ul>
+                                <li>MTCNN Neural Network</li>
+                                <li>Outputs a 160px x 160px face</li>
+                                <li>Finds key face landmarks</li>
+                                <li>Attempts to locate landmarks consistently</li>
+                                <li>Consistency is key</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
