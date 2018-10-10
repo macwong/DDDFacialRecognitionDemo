@@ -59,9 +59,6 @@ class PimpedMenu extends Component {
                 $currentSlide.find('.slick-next').click();
             }
         }
-        else {
-            console.log("ignore me")
-        }
       }
 
     componentDidMount() {
