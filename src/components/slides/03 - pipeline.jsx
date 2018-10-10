@@ -121,6 +121,7 @@ export default class PipelineSlides extends Component {
                                 <li>Nearest neighbour algorithm</li>
                                 <li>Compare embeddings of prediction vs known embeddings</li>
                                 <li>Example is 2-dimensional, but in reality it's 512-dimensional</li>
+                                <li>Don't need many examples of each person (one-shot learning)</li>
                             </ul>
                         </div>
                     </div>
