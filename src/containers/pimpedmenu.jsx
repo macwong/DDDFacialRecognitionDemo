@@ -10,12 +10,14 @@ import BasicConceptsSlides from '../components/slides/02 - basicconcepts';
 import PipelineSlides from '../components/slides/03 - pipeline';
 import ChallengeSlides from '../components/slides/04 - issues';
 import TechnologiesSlides from '../components/slides/05 - technologies';
+import $ from 'jquery';
 
 class PimpedMenu extends Component {
     constructor(props) {
         super(props);
 
         this.showHideSection = this.showHideSection.bind(this);
+        this.keyFunction = this.keyFunction.bind(this);
     }
 
     showHideSection(section) {
@@ -46,6 +48,29 @@ class PimpedMenu extends Component {
             </div>
         );
     }
+
+    keyFunction(event){
+        const $currentSlide = $(document).find('.powerpoint-section:not(.hidden)');
+        if ($currentSlide.length === 1) {
+            if(event.keyCode == 37) {
+                $currentSlide.find('.slick-prev').click();
+            }
+            if(event.keyCode == 39) {
+                $currentSlide.find('.slick-next').click();
+            }
+        }
+        else {
+            console.log("ignore me")
+        }
+      }
+
+    componentDidMount() {
+        document.addEventListener("keydown", this.keyFunction, false);
+    }
+
+    componentWillUnmount(){
+        document.removeEventListener("keydown", this.keyFunction, false);
+      }
 }
 
 function mapStateToProps(state) {
