@@ -67,12 +67,18 @@ export default class PipelineSlides extends Component {
                 <div className="row content">
                     <div style={{width: '100%'}}>
                         <div className="centre-image" style={{marginBottom: '10px'}}>
-                            <img src="./images/2 - face detection.png" />
+                        <img src="./images/2 - face detection.png" />
                         </div>
+                        <div>
+                        <img src="./images/mtcnn.png" style={{width: '300px'}} />
                         <ul>
-                            <li>Images, video or live camera</li>
-                            <li>Can be variable in resolution and quality</li>
+                            <li>Neural network: MTCNN</li>
+                            <li>Outputs a 160px x 160px face</li>
+                            <li>Finds key face landmarks</li>
+                            <li>Attempts to locate landmarks consistently</li>
+                            <li>Consistency is key</li>
                         </ul>
+                        </div>
                     </div>
                 </div>
                 <div className="row footer">
@@ -80,7 +86,7 @@ export default class PipelineSlides extends Component {
             </Slide>
             <Slide>
                 <div className="row header">
-                    <h1>3. FaceNet Conversion</h1>
+                    <h1>3. Conversion</h1>
                 </div>
                 <div className="row content">
                     <div style={{width: '100%'}}>
