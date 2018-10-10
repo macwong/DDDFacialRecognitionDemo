@@ -137,8 +137,8 @@ export default class PipelineSlides extends Component {
                             <img src="./images/5 - output.png" />
                         </div>
                         <ul>
-                            <li>Images, video or live camera</li>
-                            <li>Can be variable in resolution and quality</li>
+                            <li>Output is a number, that represents an ID of the person</li>
+                            <li>Number maps to person's name (label)</li>
                         </ul>
                     </div>
                 </div>
