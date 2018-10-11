@@ -20,7 +20,7 @@ export default class SliderSection extends Component {
             case 1:
                 return "Input";
             case 2:
-                return "Find Face";
+                return "Detect Face";
             case 3:
                 return "Convert";
             case 4:
