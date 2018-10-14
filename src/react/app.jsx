@@ -240,7 +240,7 @@ class App extends Component {
             
             // default image
             var defImg = new Image();
-            defImg.src = "./images/qr.png";
+            // defImg.src = "./images/qr.png";
             defImg.onload = () => {
                 ctx.drawImage(defImg, Globals.defaultWidth / 2 - defImg.width / 2, Globals.defaultHeight / 2 - defImg.height / 2);
             };
