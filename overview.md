@@ -3,28 +3,32 @@
 ## Warm-Up (15 min)
 Cycle through images to predict, some informative and some humorous
 
-## Intro (1 minute)
-* Concepts and Features
-* Recognition Pipeline
-* Accuracy and Performance
-* Technologies / resources
-* Live demo
+## Intro (2 minute)
+What is Facial Recognition?
+* Identifying a person from an image (or video frame)
+* e.g. Facebook tagging, Apple Face ID, law enforcement and security surveillance
 
-## Concepts and Features (4 minutes)
-* What is Facial Recognition?
-* Examples (e.g. Facebook tagging)
-* Implementation options (e.g. Microsoft: Face API)
-* Ideal features of Facial Recognition system
-    * Accurate predictions
-    * Input from image, video and cam
-    * Robust to variables (e.g. image quality, larger datasets)
-    * Real-time predictions
-    * “Train” and evolve models
-* Live demo
+What we will be looking at:
+* How does it work?
+* Training
+* Accuracy
+* Performance
+* Technologies
+* End-to-End Scenario
 
+(Create one page for each, with images)
 
-## Recognition Pipeline (5 minutes)
-* Pipeline overview
+## How does it work? (5 minutes)
+What is going on between the input and the output?
+
+Pipeline Overview:
+* Input
+* Face Detection
+* Conversion
+* Prediction
+* Output
+
+Pipeline details:
 * Input
     * Images, video or live camera
     * Can be variable in resolution and quality
@@ -51,10 +55,20 @@ Cycle through images to predict, some informative and some humorous
 * Live demo
 
 
+
+
 ## Training (3 minutes)
 Nothing yet...
 
-## Accuracy and Performance (4 minutes)
+## Accuracy (4 minutes)
+* Ideal features of Facial Recognition system
+    * Accurate predictions
+    * Input from image, video and cam
+    * Robust to variables (e.g. image quality, larger datasets)
+    * Real-time predictions
+    * “Train” and evolve models
+* Live demo
+
 Measuring accuracy:
 * Calculate “distance”
 * Anything lower than 0.75 is considered accurate
@@ -67,6 +81,7 @@ What causes bad predictions?
 * Wrong choice of algorithm for prediction
 * Unknown person
 
+## Performance (3 minutes)
 Performance considerations:
 * Hardware (CPU vs GPU)
 * Amount of known people in dataset (high quantity = slower)
@@ -74,7 +89,7 @@ Performance considerations:
 
 Live demo
 
-## Technologies and Resources (2 minutes)
+## Technologies (2 minutes)
 Technologies used – server side:
 * Language: Python
 * Maths computation graphs (especially for GPUs) – Tensorflow
@@ -86,10 +101,11 @@ Technologies used – client side:
 
 Live demo
 
+## End-to-End Scenario (4 minutes)
 
-## Summary (1 minute)
+## Conclusion (1 minute)
 Resources
 
-Questions
+Questions?
 
 
