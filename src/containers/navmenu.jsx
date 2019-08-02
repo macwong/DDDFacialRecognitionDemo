@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import Globals from '../js/globals';
 import { onMenuClick, updateMenuIsOpen } from '../actions/actions_menu';
@@ -30,10 +30,12 @@ class NavMenu extends Component {
         const sections = [
             { key: "Welcome", title: "Welcome", section: Globals.sectionIDs.welcome, showTitle: false },
             { key: "Introduction", title: "Introduction", section: Globals.sectionIDs.introduction, showTitle: true },
-            { key: "Basic Concepts", title: "Concepts and Features", section: Globals.sectionIDs.basicconcepts, showTitle: true },
-            { key: "Facial Recogniton Pipeline", title: "Recognition Pipeline", section: Globals.sectionIDs.facialrecognitionpipeline, showTitle: true },
-            { key: "Potential Challenges", title: "Accuracy and Performance", section: Globals.sectionIDs.challenges, showTitle: true },
-            { key: "Technologies Used", title: "Technologies / Resources", section: Globals.sectionIDs.technologies, showTitle: true },
+            { key: "Facial Recogniton Pipeline", title: "How does it work?", section: Globals.sectionIDs.facialrecognitionpipeline, showTitle: true },
+            { key: "Potential Challenges", title: "Accuracy", section: Globals.sectionIDs.challenges, showTitle: true },
+            { key: "Potential Challenges", title: "Performance", section: Globals.sectionIDs.challenges, showTitle: true },
+            { key: "Technologies Used", title: "Technologies", section: Globals.sectionIDs.technologies, showTitle: true },
+            { key: "Scenario", title: "End-to-end scenario", section: Globals.sectionIDs.technologies, showTitle: true },
+            { key: "Conclusion", title: "Conclusion", section: Globals.sectionIDs.technologies, showTitle: true },
             { key: "Demo", title: "Demo", section: Globals.sectionIDs.demo, showTitle: true }
         ];
 
@@ -42,27 +44,27 @@ class NavMenu extends Component {
         if (this.props.currentSection === Globals.sectionIDs.welcome) {
             burgerCSS += "hidden";
         }
-        
+
 
         return (
-            <Menu 
+            <Menu
                 isOpen={this.props.isOpen}
-                pageWrapId={ "page-wrap" } 
-                outerContainerId={ "outer-container" }
+                pageWrapId={"page-wrap"}
+                outerContainerId={"outer-container"}
                 width={350}
                 onStateChange={this.updateIsOpen}
-                burgerButtonClassName={ burgerCSS }
-                menuClassName={ "nav-menu" }
+                burgerButtonClassName={burgerCSS}
+                menuClassName={"nav-menu"}
             >
                 <div className="crosshair">
                     <nav className="link-effect-14" id="link-effect-14">
-                        {  
+                        {
                             sections.map((section) => {
                                 return (
                                     <a
-                                        className={this.highlightSection(section.key)} 
+                                        className={this.highlightSection(section.key)}
                                         key={section.key}
-                                        href="#" 
+                                        href="#"
                                         onClick={this.onMenuClick}
                                         data-key={section.key}
                                         data-section={section.section}
@@ -73,7 +75,7 @@ class NavMenu extends Component {
                                     </a>
                                 )
                             })
-                        }    
+                        }
                     </nav>
                 </div>
             </Menu>

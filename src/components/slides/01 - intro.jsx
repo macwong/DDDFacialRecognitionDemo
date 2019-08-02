@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
 
@@ -9,9 +9,9 @@ export default class IntroSlides extends Component {
 
     render() {
         return (
-            <PowerpointSection 
-                section={this.props.section} 
-                cssClass={this.props.cssClass} 
+            <PowerpointSection
+                section={this.props.section}
+                cssClass={this.props.cssClass}
             >
                 <Slide>
                     <div className="row header">
@@ -19,11 +19,12 @@ export default class IntroSlides extends Component {
                     </div>
                     <div className="row content">
                         <ul>
-                            <li>Concepts and features</li>
-                            <li>Recognition pipeline</li>
-                            <li>Accuracy and Performance</li>
-                            <li>Technologies / resources</li>
-                            <li>Live demo</li>
+                            <li>How does it work?</li>
+                            <li>Training</li>
+                            <li>Accuracy</li>
+                            <li>Performance</li>
+                            <li>Technologies</li>
+                            <li>End-to-end Scenario</li>
                         </ul>
                     </div>
                     <div className="row footer">

@@ -21,6 +21,10 @@ What we will be looking at:
 ## How does it work? (5 minutes)
 What is going on between the input and the output?
 
+Training
+* “Train” models
+* Evolve models via "online" learning
+
 Pipeline Overview:
 * Input
 * Face Detection
@@ -55,10 +59,6 @@ Pipeline details:
 * Live demo
 
 
-
-
-## Training (3 minutes)
-* “Train” and evolve models
 
 ## Accuracy (4 minutes)
 Measuring accuracy:
