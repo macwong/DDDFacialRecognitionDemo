@@ -58,28 +58,25 @@ Pipeline details:
 
 
 ## Training (3 minutes)
-Nothing yet...
+* “Train” and evolve models
 
 ## Accuracy (4 minutes)
-* Ideal features of Facial Recognition system
-    * Accurate predictions
-    * Input from image, video and cam
-    * Robust to variables (e.g. image quality, larger datasets)
-    * Real-time predictions
-    * “Train” and evolve models
-* Live demo
-
 Measuring accuracy:
 * Calculate “distance”
 * Anything lower than 0.75 is considered accurate
 * Larger than 1.2 is rotten
 * Could add “unknown” threshold
 
-What causes bad predictions?
+What needs to be considered:
+* Input resolution
+* Robust to variables (e.g. image quality, larger datasets)
+
+What causes inaccurate predictions?
 * Large quantity of people to compare against
 * Bad input (e.g. bad resolution, face obscured)
+* Lookalikes / twins
+* Bad threshold for "unknown" people
 * Wrong choice of algorithm for prediction
-* Unknown person
 
 ## Performance (3 minutes)
 Performance considerations:
