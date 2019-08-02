@@ -102,6 +102,19 @@ Technologies used – client side:
 Live demo
 
 ## End-to-End Scenario (4 minutes)
+Government Surveillance
+
+Cool bar:
+https://codepen.io/geoffgraham/pen/FyBJk
+
+Bar with the following statuses:
+* Gather data (FaceApp, LFW)
+* Train model
+* Test model (and "online learning" of staff... labelled data, target 99%, actual 97%)
+* Rollout (major train stations)
+* Recognition (government research scientist stealing trade secrets... we don't have a train station, but we have the next best thing...)
+
+Identify any performace and/or accuracy things that come up
 
 ## Conclusion (1 minute)
 Resources
