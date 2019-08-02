@@ -8,7 +8,6 @@ What is Facial Recognition?
 
 What we will be looking at:
 * How does it work?
-* Training
 * Accuracy
 * Performance
 * Technologies
