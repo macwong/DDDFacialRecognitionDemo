@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Globals from '../js/globals';
-import {onPolaroidClick} from '../actions/actions_menu';
+import { onPolaroidClick } from '../actions/actions_menu';
 
 class Welcome extends Component {
     constructor(props) {
@@ -22,9 +22,9 @@ class Welcome extends Component {
                     <div className="item">
                         <div className="polaroid" onClick={this.onPolaroidClick}>
                             <div className="welcome-title">
-                                Let's face it,<br />
-                                Facial Recognition<br />
-                                Is in your face
+                                Understanding<br />
+                                Facial<br />
+                                Recognition
                             </div>
                             <img src="./images/face.jpg" />
                             <div className="caption">Dave McCormick</div>
