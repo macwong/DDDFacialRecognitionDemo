@@ -31,7 +31,7 @@ class NavMenu extends Component {
             { key: "Welcome", title: "Welcome", section: Globals.sectionIDs.welcome, showTitle: false },
             { key: "Introduction", title: "Introduction", section: Globals.sectionIDs.introduction, showTitle: true },
             { key: "Facial Recogniton Pipeline", title: "How does it work?", section: Globals.sectionIDs.facialrecognitionpipeline, showTitle: true },
-            { key: "Potential Challenges", title: "Accuracy", section: Globals.sectionIDs.challenges, showTitle: true },
+            { key: "Accuracy", title: "Accuracy", section: Globals.sectionIDs.accuracy, showTitle: true },
             { key: "Potential Challenges", title: "Performance", section: Globals.sectionIDs.challenges, showTitle: true },
             { key: "Technologies Used", title: "Technologies", section: Globals.sectionIDs.technologies, showTitle: true },
             { key: "Scenario", title: "End-to-end scenario", section: Globals.sectionIDs.technologies, showTitle: true },

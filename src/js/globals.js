@@ -1,18 +1,19 @@
 export default class Globals {
-    static get sectionIDs() { 
+    static get sectionIDs() {
         return {
             welcome: "welcome",
             introduction: "introduction",
             basicconcepts: "basicconcepts",
             facialrecognitionpipeline: "facialrecognitionpipeline",
+            accuracy: "accuracy",
             technologies: "technologies",
             challenges: "challenges",
             demo: "demo"
-        }; 
+        };
     }
 
     static get pngSource() {
-        return "data:image/png;base64,"; 
+        return "data:image/png;base64,";
     }
 
     static get endpoint() {

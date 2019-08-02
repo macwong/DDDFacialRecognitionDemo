@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import NavMenu from './navmenu';
 import SettingsMenu from './settingsmenu';
@@ -8,8 +8,9 @@ import App from '../react/app';
 import IntroSlides from '../components/slides/01 - intro';
 import BasicConceptsSlides from '../components/slides/02 - basicconcepts';
 import PipelineSlides from '../components/slides/03 - pipeline';
-import ChallengeSlides from '../components/slides/04 - issues';
-import TechnologiesSlides from '../components/slides/05 - technologies';
+import AccuracySlides from '../components/slides/04 - accuracy';
+import ChallengeSlides from '../components/slides/05 - issues';
+import TechnologiesSlides from '../components/slides/06 - technologies';
 import $ from 'jquery';
 
 class PimpedMenu extends Component {
@@ -24,7 +25,7 @@ class PimpedMenu extends Component {
         return this.props.currentSection === section ? "" : "hidden";
     }
 
-    render () {
+    render() {
         return (
             <div id="outer-container">
                 <NavMenu />
@@ -38,6 +39,7 @@ class PimpedMenu extends Component {
                         <IntroSlides section={Globals.sectionIDs.introduction} cssClass={this.showHideSection(Globals.sectionIDs.introduction)} />
                         <BasicConceptsSlides section={Globals.sectionIDs.basicconcepts} cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} />
                         <PipelineSlides section={Globals.sectionIDs.facialrecognitionpipeline} cssClass={this.showHideSection(Globals.sectionIDs.facialrecognitionpipeline)} />
+                        <AccuracySlides section={Globals.sectionIDs.accuracy} cssClass={this.showHideSection(Globals.sectionIDs.accuracy)} />
                         <ChallengeSlides section={Globals.sectionIDs.challenges} cssClass={this.showHideSection(Globals.sectionIDs.challenges)} />
                         <TechnologiesSlides section={Globals.sectionIDs.technologies} cssClass={this.showHideSection(Globals.sectionIDs.technologies)} />
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
@@ -49,31 +51,31 @@ class PimpedMenu extends Component {
         );
     }
 
-    keyFunction(event){
+    keyFunction(event) {
         const $currentSlide = $(document).find('.powerpoint-section:not(.hidden)');
         if ($currentSlide.length === 1) {
-            if(event.keyCode == 37) {
+            if (event.keyCode == 37) {
                 $currentSlide.find('.slick-prev').click();
             }
-            if(event.keyCode == 39) {
+            if (event.keyCode == 39) {
                 $currentSlide.find('.slick-next').click();
             }
         }
-      }
+    }
 
     componentDidMount() {
         document.addEventListener("keydown", this.keyFunction, false);
     }
 
-    componentWillUnmount(){
+    componentWillUnmount() {
         document.removeEventListener("keydown", this.keyFunction, false);
-      }
+    }
 }
 
 function mapStateToProps(state) {
-    return { 
-        currentSection: state.menu.currentSection, 
-        currentTitle: state.menu.currentTitle 
+    return {
+        currentSection: state.menu.currentSection,
+        currentTitle: state.menu.currentTitle
     };
 }
 
