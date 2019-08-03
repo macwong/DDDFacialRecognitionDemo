@@ -37,7 +37,7 @@ export default class IntroSlides extends Component {
                     <div className="row content">
                         <div style={{ width: '100%' }}>
                             <div className="centre-image" style={{ height: '400px' }}>
-                                <img src="./images/diagrams/What is facial recognition.png" />
+                                <img src="./images/diagrams/How does it work.png" />
                             </div>
                         </div>
                     </div>
