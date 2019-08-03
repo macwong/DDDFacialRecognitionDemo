@@ -23,7 +23,7 @@ export default class IntroSlides extends Component {
                                 <li>Identifying a person from an image (or video frame)</li>
                             </ul>
                             <div className="centre-image" style={{ height: '400px' }}>
-                                <img src="./images/facerec.png" />
+                                <img src="./images/diagrams/What is facial recognition.png" />
                             </div>
                         </div>
                     </div>
@@ -35,9 +35,11 @@ export default class IntroSlides extends Component {
                         <h1>How does it work?</h1>
                     </div>
                     <div className="row content">
-                        <ul>
-                            <li>How does it work?</li>
-                        </ul>
+                        <div style={{ width: '100%' }}>
+                            <div className="centre-image" style={{ height: '400px' }}>
+                                <img src="./images/diagrams/What is facial recognition.png" />
+                            </div>
+                        </div>
                     </div>
                     <div className="row footer">
                     </div>
