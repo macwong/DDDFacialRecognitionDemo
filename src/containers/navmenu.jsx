@@ -34,8 +34,8 @@ class NavMenu extends Component {
             { key: "Accuracy", title: "Accuracy", section: Globals.sectionIDs.accuracy, showTitle: true },
             { key: "Potential Challenges", title: "Performance", section: Globals.sectionIDs.challenges, showTitle: true },
             { key: "Technologies Used", title: "Technologies", section: Globals.sectionIDs.technologies, showTitle: true },
-            { key: "Scenario", title: "End-to-end scenario", section: Globals.sectionIDs.technologies, showTitle: true },
-            { key: "Conclusion", title: "Conclusion", section: Globals.sectionIDs.technologies, showTitle: true },
+            { key: "Scenario", title: "End-to-end scenario", section: Globals.sectionIDs.scenario, showTitle: true },
+            { key: "Conclusion", title: "Conclusion", section: Globals.sectionIDs.conclusion, showTitle: true },
             { key: "Demo", title: "Demo", section: Globals.sectionIDs.demo, showTitle: true }
         ];
 
