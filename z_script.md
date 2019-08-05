@@ -98,9 +98,26 @@ Pipeline details:
     * Prediction
 
 ## Training
-Training
-* “Train” models
+Overview:
+* "Learn" faces with face > name pairs
+* Similar pipeline for training with predicting
 * Evolve models via "online" learning
+
+Training pipeline (similar to prediction pipeline):
+* Input
+    * Photo(s) of each person (can be as little as 1 photo)
+* Face Detection
+    * Ensure that the training data has a face
+    * Use face detector (e.g. MTCNN) to crop and align face
+    * Needs to be consistent with prediction face detector
+* Conversion
+    * FaceNet (i.e. 512 embeddings)
+* Output (saved model with 512 for each photo)
+
+* Live demo
+    * Train 3 people (1 photo each)
+    * (much better with GPU)
+    * Check me, then add me to dataset
 
 
 ## Accuracy
