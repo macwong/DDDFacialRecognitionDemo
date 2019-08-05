@@ -1,9 +1,25 @@
 # DDD Presentation – Understanding Facial Recognition
 
-## Warm-Up (15 min)
+## Table of Contents
+* Warm-Up (15 min)
+
+* Introduction (2 minutes)
+* How does it work? (5 minutes)
+* Training (3 minutes)
+* Accuracy (4 minutes)
+* Performance (3 minutes)
+* Technologies (2 minutes)
+* Conclusion (1 minute)
+
+
+## Warm-Up
 Cycle through images to predict, some informative and some humorous
 
-## Intro (2 minute)
+## Introduction
+Intro
+* Welcome
+* Sponsors
+
 What is Facial Recognition?
 * Identifying a person from an image (or video frame)
 * e.g. Facebook tagging, Apple Face ID, law enforcement and security surveillance
@@ -18,7 +34,7 @@ What we will be looking at:
 
 (Create one page for each, with images)
 
-## How does it work? (5 minutes)
+## How does it work?
 What is going on between the input and the output?
 
 Training
@@ -60,7 +76,7 @@ Pipeline details:
 
 
 
-## Accuracy (4 minutes)
+## Accuracy
 Measuring accuracy:
 * Calculate “distance”
 * Anything lower than 0.75 is considered accurate
@@ -78,7 +94,7 @@ What causes inaccurate predictions?
 * Bad threshold for "unknown" people
 * Wrong choice of algorithm for prediction
 
-## Performance (3 minutes)
+## Performance
 Performance considerations:
 * Hardware (CPU vs GPU)
 * Amount of known people in dataset (high quantity = slower)
@@ -86,7 +102,7 @@ Performance considerations:
 
 Live demo
 
-## Technologies (2 minutes)
+## Technologies
 Technologies used – server side:
 * Language: Python
 * Maths computation graphs (especially for GPUs) – Tensorflow
@@ -96,24 +112,10 @@ Technologies used – server side:
 Technologies used – client side:
 * Electron, Jquery, React, Redux, HTML5, CSS3, Babel…
 
-Live demo
 
-## End-to-End Scenario (4 minutes)
-Government Surveillance
 
-Cool bar:
-https://codepen.io/geoffgraham/pen/FyBJk
 
-Bar with the following statuses:
-* Gather data (FaceApp, LFW)
-* Train model
-* Test model (and "online learning" of staff... labelled data, target 99%, actual 97%)
-* Rollout (major train stations)
-* Recognition (government research scientist stealing trade secrets... we don't have a train station, but we have the next best thing...)
-
-Identify any performace and/or accuracy things that come up
-
-## Conclusion (1 minute)
+## Conclusion
 Resources
 
 Questions?
