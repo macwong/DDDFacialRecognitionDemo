@@ -121,32 +121,52 @@ Training pipeline (similar to prediction pipeline):
 
 
 ## Accuracy
+> Draw accuracy chart  
+
+
 Measuring accuracy:
 * Calculate “distance”
 * Anything lower than 0.75 is considered accurate
 * Larger than 1.2 is rotten
 * Could add “unknown” threshold
 
-What needs to be considered:
+What can affect predictions:
 * Input resolution
-* Robust to variables (e.g. image quality, larger datasets)
-
-What causes inaccurate predictions?
+* Variables (e.g. image quality, larger datasets)
 * Large quantity of people to compare against
 * Bad input (e.g. bad resolution, face obscured)
 * Lookalikes / twins
 * Bad threshold for "unknown" people
 * Wrong choice of algorithm for prediction
 
+Live demo:
+* Facial expressions
+* Multiple faces
+* Age differences
+* Makeup differences
+* Lighting conditions
+* Occlusions
+* Doppelgangers
+
 ## Performance
 Performance considerations:
+* Need for real-time?
 * Hardware (CPU vs GPU)
 * Amount of known people in dataset (high quantity = slower)
+* Amount of faces in the input (high quantity = slower)
 * Choice of algorithms for face detection, embeddings and predictions
 
 Live demo
+* 5000+ faces
+* Ocean's Eleven?
+* Many faces?
+
 
 ## Technologies
+
+> Diagram like stackshare.io  
+> Focus on server side (especially Python, Tensorflow and Flask)
+
 Technologies used – server side:
 * Language: Python
 * Maths computation graphs (especially for GPUs) – Tensorflow
