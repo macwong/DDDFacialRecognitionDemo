@@ -69,30 +69,30 @@ export default class PipelineSlides extends Component {
                         </ul>
                     </div>
                 </SimpleSlide>
-                <SimpleSlide title="4. Prediction">
+                <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
                             <img src="./images/4 - prediction.png" />
                         </div>
                         <div style={{ display: 'flex' }}>
-                            <img src="./images/neighbours.png" style={{ width: '500px', height: '350px' }} />
+                            <img src="./images/neighbours.png" style={{ width: '400px', height: '300px' }} />
                             <ul>
-                                <li>Nearest neighbour algorithm</li>
-                                <li>Compare embeddings of prediction vs known embeddings</li>
-                                <li>Example is 2-dimensional, but in reality it's 512-dimensional</li>
-                                <li>Don't need many examples of each person (one-shot learning)</li>
+                                <li>Use FaceNet embeddings for prediction</li>
+                                <li>Compare with "known" FaceNet faces</li>
+                                <li>Logistic regression? SVM? Neural Networks?</li>
+                                <li>Nearest neighbour algorithm is simple, and works consistently</li>
+                                <li>One-shot learning</li>
                             </ul>
                         </div>
                     </div>
                 </SimpleSlide>
-                <SimpleSlide title="5. Output">
+                <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
                             <img src="./images/5 - output.png" />
                         </div>
                         <ul>
-                            <li>Output is a number, that represents an ID of the person</li>
-                            <li>Number maps to person's name (label)</li>
+                            <li>Putting a name to a face...</li>
                         </ul>
                     </div>
                 </SimpleSlide>
