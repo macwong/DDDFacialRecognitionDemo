@@ -27,7 +27,7 @@ export default class PipelineSlides extends Component {
                         <img src="./images/pipeline.png" />
                     </div>
                 </SimpleSlide>
-                <SimpleSlide title="1. Input">
+                <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
                             <img src="./images/1 - input.png" />

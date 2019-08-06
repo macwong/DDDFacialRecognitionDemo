@@ -8,9 +8,14 @@ export default class SimpleSlide extends Component {
     render() {
         return (
             <div className="box">
-                <div className="row header">
-                    <h1>{this.props.title}</h1>
-                </div>
+                {
+                    this.props.title ?
+                        <div className="row header">
+                            <h1>{this.props.title}</h1>
+                        </div>
+                        : null
+                }
+
                 <div className="row content">
                     {this.props.children}
                 </div>
