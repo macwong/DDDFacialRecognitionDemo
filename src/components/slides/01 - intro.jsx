@@ -70,9 +70,11 @@ export default class IntroSlides extends Component {
                     </div>
                 </Slide>
                 <SimpleSlide title="Technologies">
-                    <ul>
-                        <li>Technologies</li>
-                    </ul>
+                    <div style={{ width: '100%' }}>
+                        <div className="centre-image" style={{ height: '400px' }}>
+                            <img src="./images/technologies.webp" />
+                        </div>
+                    </div>
                 </SimpleSlide>
             </PowerpointSection>
         );
