@@ -38,7 +38,6 @@ class PimpedMenu extends Component {
                     <section className="sections">
                         <Welcome cssClass={this.showHideSection(Globals.sectionIDs.welcome)} />
                         <IntroSlides section={Globals.sectionIDs.introduction} cssClass={this.showHideSection(Globals.sectionIDs.introduction)} />
-                        <BasicConceptsSlides section={Globals.sectionIDs.basicconcepts} cssClass={this.showHideSection(Globals.sectionIDs.basicconcepts)} />
                         <PipelineSlides section={Globals.sectionIDs.facialrecognitionpipeline} cssClass={this.showHideSection(Globals.sectionIDs.facialrecognitionpipeline)} />
                         <AccuracySlides section={Globals.sectionIDs.accuracy} cssClass={this.showHideSection(Globals.sectionIDs.accuracy)} />
                         <ChallengeSlides section={Globals.sectionIDs.challenges} cssClass={this.showHideSection(Globals.sectionIDs.challenges)} />
