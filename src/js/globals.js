@@ -8,7 +8,6 @@ export default class Globals {
             accuracy: "accuracy",
             technologies: "technologies",
             challenges: "challenges",
-            scenario: "scenario",
             conclusion: "conclusion",
             demo: "demo"
         };

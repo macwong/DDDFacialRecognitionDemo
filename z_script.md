@@ -30,7 +30,6 @@ What we will be looking at:
 * Accuracy
 * Performance
 * Technologies
-* End-to-End Scenario
 
 
 > Create one page for each, with images...  

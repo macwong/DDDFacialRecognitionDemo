@@ -12,7 +12,6 @@ import AccuracySlides from '../components/slides/04 - accuracy';
 import ChallengeSlides from '../components/slides/05 - issues';
 import TechnologiesSlides from '../components/slides/06 - technologies';
 import $ from 'jquery';
-import ScenarioSlides from '../components/slides/07 - scenario';
 import ConclusionSlides from '../components/slides/08 - conclusion';
 
 class PimpedMenu extends Component {
@@ -44,7 +43,6 @@ class PimpedMenu extends Component {
                         <AccuracySlides section={Globals.sectionIDs.accuracy} cssClass={this.showHideSection(Globals.sectionIDs.accuracy)} />
                         <ChallengeSlides section={Globals.sectionIDs.challenges} cssClass={this.showHideSection(Globals.sectionIDs.challenges)} />
                         <TechnologiesSlides section={Globals.sectionIDs.technologies} cssClass={this.showHideSection(Globals.sectionIDs.technologies)} />
-                        <ScenarioSlides section={Globals.sectionIDs.scenario} cssClass={this.showHideSection(Globals.sectionIDs.scenario)} />
                         <ConclusionSlides section={Globals.sectionIDs.conclusion} cssClass={this.showHideSection(Globals.sectionIDs.conclusion)} />
                         <div id={Globals.sectionIDs.demo} className={this.showHideSection(Globals.sectionIDs.demo)}>
                             <App />
