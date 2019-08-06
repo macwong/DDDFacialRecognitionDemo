@@ -38,7 +38,7 @@ export default class PipelineSlides extends Component {
                         </ul>
                     </div>
                 </SimpleSlide>
-                <SimpleSlide title="2. Face Detection">
+                <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
                             <img src="./images/2 - face detection.png" />
@@ -46,11 +46,11 @@ export default class PipelineSlides extends Component {
                         <div style={{ display: 'flex' }}>
                             <img src="./images/mtcnn.png" style={{ width: '400px', height: '320px' }} />
                             <ul>
-                                <li>MTCNN neural network</li>
-                                <li>Outputs a 160px x 160px face</li>
-                                <li>Finds key face landmarks</li>
-                                <li>Attempts to align landmarks consistently</li>
-                                <li>Consistency is key</li>
+                                <li>Cropping the face from the input</li>
+                                <li>Find key face landmarks</li>
+                                <li>Consistent face positioning</li>
+                                <li>Examples: Viola-Jones, HOG, DLIB, MTCNN</li>
+                                <li>Demo uses MTCNN</li>
                             </ul>
                         </div>
                     </div>
