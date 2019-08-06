@@ -55,15 +55,15 @@ export default class PipelineSlides extends Component {
                         </div>
                     </div>
                 </SimpleSlide>
-                <SimpleSlide title="3. Conversion">
+                <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
                             <img src="./images/3 - conversion.png" />
                         </div>
                         <ul>
                             <li>FaceNet neural network</li>
-                            <li>Converts image of face to 512 numbers (called embeddings)</li>
-                            <li>Also supports 128 and 256 dimension embeddings</li>
+                            <li>Converts image of face to numeric "embeddings"</li>
+                            <li>Size can be 128, 256 or 512</li>
                             <li>Learns how to convert image of face to embeddings via training</li>
                             <li>Pre-trained on VGGFace2 dataset, from 3.3+ million images of faces</li>
                         </ul>
