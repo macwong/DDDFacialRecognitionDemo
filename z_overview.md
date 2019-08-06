@@ -8,14 +8,13 @@ What is Facial Recognition?
 
 What we will be looking at:
 * How does it work?
+* Training
 * Accuracy
 * Performance
 * Technologies
-* End-to-End Scenario
 
 ## How does it work? (5 minutes)
 * What is going on between the input and the output?
-* Training
 * Pipeline Overview
 * Input
 * Face Detection
@@ -24,11 +23,23 @@ What we will be looking at:
 * Output
 * Live demo
 
+## Training (3 minutes)
+* "Trained" model
+* Photos of each person
+* Can be as little as 1 photo per person (one-shot learning)
+* Should be consistent amount of photos per person (depending on algorithm)
+* Can use online learning
+* Training pipeline
+* Input
+* Face Detection
+* Conversion
+* Output (saved model with 512 embeddings per face)
+* Live demo
+
 
 ## Accuracy (4 minutes)
 * Measuring accuracy
-* What needs to be considered
-* What causes inaccurate predictions?
+* What can affect predictions?
 * Live demo
 
 ## Performance (3 minutes)
@@ -38,14 +49,6 @@ What we will be looking at:
 ## Technologies (2 minutes)
 * Technologies used – server side
 * Technologies used – client side
-
-## End-to-End Scenario (4 minutes)
-* Government Surveillance
-* Gather data
-* Train model
-* Test model
-* Rollout
-* Recognition (live demo)
 
 ## Conclusion (1 minute)
 * Resources
