@@ -52,6 +52,109 @@ header {
   font-size: 1.15em;
 }
 
+/* Animated gif for loading image */
+@-webkit-keyframes dyinglight {
+  15% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  50% {
+    -webkit-transform: rotate(-89deg);
+            transform: rotate(-89deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes dyinglight {
+  15% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  50% {
+    -webkit-transform: rotate(-89deg);
+            transform: rotate(-89deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+
+.dl {
+  position: absolute;
+  display: inline-block;
+}
+
+.dl__square {
+  width: 150px;
+  height: 150px;
+  background: #4285F4;
+  display: flex;
+  align-items: center;
+}
+
+.dl__loading {
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+.dl__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-animation: dyinglight 1s ease infinite;
+          animation: dyinglight 1s ease infinite;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.dl__corner--top:before,
+.dl__corner--top:after,
+.dl__corner--bottom:before,
+.dl__corner--bottom:after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: #4285F4;
+  content: "";
+}
+
+.dl__corner--top:before {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  top: -17px;
+  left: -17px;
+}
+.dl__corner--top:after {
+  border-right: 1px solid;
+  border-top: 1px solid;
+  top: -17px;
+  right: -17px;
+}
+
+.dl__corner--bottom:before {
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  bottom: -17px;
+  left: -17px;
+}
+.dl__corner--bottom:after {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  bottom: -17px;
+  right: -17px;
+}
+
+
 /*#endregion Header*/
 
 

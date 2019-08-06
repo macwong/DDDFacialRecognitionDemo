@@ -49,9 +49,11 @@ export default class IntroSlides extends Component {
                         <h1>Accuracy</h1>
                     </div>
                     <div className="row content">
-                        <ul>
-                            <li>Accuracy</li>
-                        </ul>
+                        <div style={{ width: '100%' }}>
+                            <div className="centre-image" style={{ height: '400px' }}>
+                                <img src="./images/diagrams/Accuracy.png" />
+                            </div>
+                        </div>
                     </div>
                     <div className="row footer">
                     </div>
@@ -60,10 +62,22 @@ export default class IntroSlides extends Component {
                     <div className="row header">
                         <h1>Performance</h1>
                     </div>
-                    <div className="row content">
-                        <ul>
-                            <li>Performance</li>
-                        </ul>
+                    <div className="row content" style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}>
+                        <div className="dl">
+                            <div className="dl__container">
+                                <div className="dl__corner--top"></div>
+                                <div className="dl__corner--bottom"></div>
+                            </div>
+                            <div className="dl__square">
+                                <div className="dl__loading">Predicting face, please wait...</div>
+                            </div>
+                        </div>
+
                     </div>
                     <div className="row footer">
                     </div>
@@ -92,7 +106,7 @@ export default class IntroSlides extends Component {
                     <div className="row footer">
                     </div>
                 </Slide>
-            </PowerpointSection>
+            </PowerpointSection >
         );
     }
 }
