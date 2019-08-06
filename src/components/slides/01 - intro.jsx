@@ -14,6 +14,13 @@ export default class IntroSlides extends Component {
                 section={this.props.section}
                 cssClass={this.props.cssClass}
             >
+                <SimpleSlide>
+                    <div style={{ width: '100%' }}>
+                        <div className="centre-image">
+                            <img src="./images/sponsors.png" style={{ width: "900px" }} />
+                        </div>
+                    </div>
+                </SimpleSlide>
                 <SimpleSlide title="What is Facial Recognition?">
                     <div style={{ width: '100%' }}>
                         <ul>

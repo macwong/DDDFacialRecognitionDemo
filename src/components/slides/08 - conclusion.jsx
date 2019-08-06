@@ -21,12 +21,8 @@ export default class ConclusionSlides extends Component {
                     <div className="row content">
                         <ul>
                             <li>
-                                Wiki article:<br />
-                                <a style={{ color: 'blue' }} href="https://wiki.starrez.com/display/RD/Facial+Recognition">https://wiki.starrez.com/display/RD/Facial+Recognition</a>
-                            </li>
-                            <li>
                                 This demo:<br />
-                                <a style={{ color: 'blue' }} href="https://github.com/macwong/PimpedFacialRecognitionDemo">https://github.com/macwong/PimpedFacialRecognitionDemo</a>
+                                <a style={{ color: 'blue' }} href="https://github.com/macwong/DDDFacialRecognitionDemo">https://github.com/macwong/DDDFacialRecognitionDemo</a>
                             </li>
                             <li>
                                 Facial recognition service:<br />

@@ -90,11 +90,13 @@ Pipeline details:
     * Output is a number, that represents an ID of the person
     * Number maps to person’s name (label)
 * Live demo
-    * Predict me in live stream
+    * Predict me in live stream, without me in the dataset
     * Input
     * Face Detection
     * Conversion
     * Prediction
+    * Add me to model
+    * Predict again
 
 ## Training
 Overview:
