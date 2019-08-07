@@ -47,7 +47,6 @@ export default class AccuracySlides extends Component {
                 </SimpleSlide>
                 <DemoSlide />
             </PowerpointSection>
-
         );
     }
 }

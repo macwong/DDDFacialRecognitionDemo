@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
 import DemoSlide from './demoslide';
+import SimpleSlide from '../simpleslide';
 
 export default class UseCaseSlides extends Component {
     constructor(props) {
@@ -16,18 +17,37 @@ export default class UseCaseSlides extends Component {
             >
                 <Slide>
                     <div className="row header">
-                        <h1>Performance Considerations</h1>
+                        <h1>Performance</h1>
                     </div>
-                    <div className="row content">
-                        <ul>
-                            <li>Hardware (e.g. GPU vs CPU)</li>
-                            <li>Amount of known people in dataset (high quantity = slower)</li>
-                            <li>Choice of algorithms for face detection, embeddings and predictions</li>
-                        </ul>
+                    <div className="row content" style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}>
+                        <div className="dl">
+                            <div className="dl__container">
+                                <div className="dl__corner--top"></div>
+                                <div className="dl__corner--bottom"></div>
+                            </div>
+                            <div className="dl__square">
+                                <div className="dl__loading">Predicting face, please wait...</div>
+                            </div>
+                        </div>
+
                     </div>
                     <div className="row footer">
                     </div>
                 </Slide>
+                <SimpleSlide title="What affects real-time performance">
+                    <ul>
+                        <li>Amount of known people in dataset</li>
+                        <li>Amount of faces in the input image</li>
+                        <li>Initial image resolution</li>
+                        <li>Choice of algorithms for face detection, embeddings and predictions</li>
+                        <li>Hardware (e.g. CPU vs GPU)</li>
+                    </ul>
+                </SimpleSlide>
                 <DemoSlide />
             </PowerpointSection>
 
