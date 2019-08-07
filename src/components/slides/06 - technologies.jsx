@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
-import DemoSlide from './demoslide';
+import SimpleSlide from '../simpleslide';
 
 export default class TechnologiesSlides extends Component {
     constructor(props) {
@@ -14,6 +14,13 @@ export default class TechnologiesSlides extends Component {
                 section={this.props.section}
                 cssClass={this.props.cssClass}
             >
+                <SimpleSlide title="Technologies">
+                    <div style={{ width: '100%' }}>
+                        <div className="centre-image" style={{ height: '400px' }}>
+                            <img src="./images/technologies.webp" style={{ width: '700px' }} />
+                        </div>
+                    </div>
+                </SimpleSlide>
                 <Slide>
                     <div className="row header">
                         <h1>Technologies Used - Server Side</h1>
