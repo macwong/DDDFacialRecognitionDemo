@@ -21,10 +21,7 @@ export default class AccuracySlides extends Component {
                             <img src="./images/scoring.png" style={{ width: '900px' }} />
                         </div>
                         <ul>
-                            <li>Calculate "distance"</li>
-                            <li>Anything lower than 0.75 is considered accurate</li>
-                            <li>Larger than 1.2 is rotten</li>
-                            <li>Could add "unknown" threshold</li>
+                            <li>Calculate "distance" between images</li>
                         </ul>
                     </div>
                 </SimpleSlide>
@@ -45,7 +42,7 @@ export default class AccuracySlides extends Component {
                         <li>Unknown person</li>
                     </ul>
                 </SimpleSlide>
-                <DemoSlide title="Accuracy Demo" model="Accuracy" />
+                <DemoSlide title="Accuracy Demo" model="2 - Accuracy" />
             </PowerpointSection>
         );
     }

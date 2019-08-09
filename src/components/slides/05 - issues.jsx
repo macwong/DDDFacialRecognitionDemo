@@ -48,7 +48,7 @@ export default class UseCaseSlides extends Component {
                         <li>Hardware (e.g. CPU vs GPU)</li>
                     </ul>
                 </SimpleSlide>
-                <DemoSlide title="Performance Demo" model="Performance" />
+                <DemoSlide title="Performance Demo" model="1 - Pipeline" />
             </PowerpointSection>
 
         );
