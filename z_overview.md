@@ -61,5 +61,5 @@ What we will be looking at:
 ## Conclusion (1 minute)
 * Resources
 * Questions?
-
+* Thank you
 
