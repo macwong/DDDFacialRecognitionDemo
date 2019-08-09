@@ -96,7 +96,7 @@ export default class PipelineSlides extends Component {
                         </ul>
                     </div>
                 </SimpleSlide>
-                <DemoSlide title="Pipeline Demo" />
+                <DemoSlide title="Pipeline Demo" model="Pipeline" />
             </PowerpointSection>
 
         );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { jumpToDemo } from '../../actions/actions_menu';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
+import $ from 'jquery';
 
 import Slide from '../slide';
 
@@ -18,6 +19,11 @@ class DemoSlide extends Component {
         }
         else {
             this.props.jumpToDemo("Features Demo");
+        }
+
+        // Let's cheat...
+        if (this.props.model) {
+            $(document).find(".models select").val(this.props.model);
         }
     }
 

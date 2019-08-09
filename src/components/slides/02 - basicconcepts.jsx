@@ -76,7 +76,7 @@ export default class BasicConceptsSlides extends Component {
                     <div className="row footer">
                     </div>
                 </Slide>
-                <DemoSlide title="Pipeline Demo" />
+                <DemoSlide title="Pipeline Demo" model="Pipeline" />
             </PowerpointSection>
 
         );
