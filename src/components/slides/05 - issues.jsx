@@ -39,7 +39,7 @@ export default class UseCaseSlides extends Component {
                     <div className="row footer">
                     </div>
                 </Slide>
-                <SimpleSlide title="What affects real-time performance">
+                <SimpleSlide title="Performance considerations">
                     <ul>
                         <li>Amount of known people in dataset</li>
                         <li>Amount of faces in the input image</li>
