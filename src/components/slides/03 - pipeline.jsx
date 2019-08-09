@@ -79,8 +79,7 @@ export default class PipelineSlides extends Component {
                             <ul>
                                 <li>Use FaceNet embeddings for prediction</li>
                                 <li>Compare with "known" FaceNet faces</li>
-                                <li>Logistic regression? SVM? Neural Networks?</li>
-                                <li>Nearest neighbour algorithm is simple, and works consistently</li>
+                                <li>Nearest neighbour algorithm: Simple, and works consistently</li>
                                 <li>One-shot learning</li>
                             </ul>
                         </div>
