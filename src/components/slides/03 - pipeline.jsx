@@ -24,24 +24,23 @@ export default class PipelineSlides extends Component {
                 </SimpleSlide>
                 <SimpleSlide title="Pipeline Overview">
                     <div className="centre-image" style={{ height: '400px', width: '100%' }}>
-                        <img src="./images/pipeline.png" />
+                        <img src="./images/pipeline.png" style={{ width: "800px" }} />
                     </div>
                 </SimpleSlide>
                 <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/1 - input.png" />
+                            <img src="./images/1 - input.png" style={{ width: "800px" }} />
                         </div>
                         <ul>
                             <li>Images, video or live camera</li>
-                            <li>Can be variable in resolution and quality</li>
                         </ul>
                     </div>
                 </SimpleSlide>
                 <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/2 - face detection.png" />
+                            <img src="./images/2 - face detection.png" style={{ width: "800px" }} />
                         </div>
                         <div style={{ display: 'flex' }}>
                             <img src="./images/mtcnn.png" style={{ width: '400px', height: '320px' }} />
@@ -58,7 +57,7 @@ export default class PipelineSlides extends Component {
                 <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/3 - conversion.png" />
+                            <img src="./images/3 - conversion.png" style={{ width: "800px" }} />
                         </div>
                         <ul>
                             <li>FaceNet neural network</li>
@@ -72,7 +71,7 @@ export default class PipelineSlides extends Component {
                 <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/4 - prediction.png" />
+                            <img src="./images/4 - prediction.png" style={{ width: "800px" }} />
                         </div>
                         <div style={{ display: 'flex' }}>
                             <img src="./images/neighbours.png" style={{ width: '400px', height: '300px' }} />
@@ -88,7 +87,7 @@ export default class PipelineSlides extends Component {
                 <SimpleSlide>
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/5 - output.png" />
+                            <img src="./images/5 - output.png" style={{ width: "800px" }} />
                         </div>
                         <ul>
                             <li>Putting a name to a face...</li>
