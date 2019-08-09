@@ -21,11 +21,15 @@ export default class ConclusionSlides extends Component {
                     <div className="row content">
                         <ul>
                             <li>
-                                This demo:<br />
+                                FaceNet repo:<br />
+                                <a style={{ color: 'blue' }} href="https://github.com/davidsandberg/facenet">https://github.com/davidsandberg/facenet</a>
+                            </li>
+                            <li>
+                                This demo's repo:<br />
                                 <a style={{ color: 'blue' }} href="https://github.com/macwong/DDDFacialRecognitionDemo">https://github.com/macwong/DDDFacialRecognitionDemo</a>
                             </li>
                             <li>
-                                Facial recognition service:<br />
+                                Facial recognition service repo:<br />
                                 <a style={{ color: 'blue' }} href="https://github.com/macwong/FacialRecognitionService">https://github.com/macwong/FacialRecognitionService</a>
                             </li>
                             <li>

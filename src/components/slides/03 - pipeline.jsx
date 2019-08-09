@@ -50,7 +50,7 @@ export default class PipelineSlides extends Component {
                                 <li>Find key face landmarks</li>
                                 <li>Consistent face positioning</li>
                                 <li>Examples: Viola-Jones, HOG, DLIB, MTCNN</li>
-                                <li>Demo uses MTCNN</li>
+                                <li>Demo uses MTCNN (3 neural networks)</li>
                             </ul>
                         </div>
                     </div>
