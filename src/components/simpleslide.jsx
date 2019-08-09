@@ -19,8 +19,6 @@ export default class SimpleSlide extends Component {
                 <div className="row content">
                     {this.props.children}
                 </div>
-                <div className="row footer">
-                </div>
             </div>
         );
     }

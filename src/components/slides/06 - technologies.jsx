@@ -16,45 +16,18 @@ export default class TechnologiesSlides extends Component {
             >
                 <SimpleSlide title="Technologies">
                     <div style={{ width: '100%' }}>
-                        <div className="centre-image" style={{ height: '400px' }}>
-                            <img src="./images/technologies.webp" style={{ width: '700px' }} />
+                        <div className="centre-image">
+                            <img src="./images/technologies.webp" style={{ width: '800px' }} />
                         </div>
                     </div>
                 </SimpleSlide>
-                <Slide>
-                    <div className="row header">
-                        <h1>Technologies Used - Server Side</h1>
+                <SimpleSlide>
+                    <div style={{ width: '100%' }}>
+                        <div className="centre-image">
+                            <img src="./images/diagrams/technologies.png" style={{ width: '750px' }} />
+                        </div>
                     </div>
-                    <div className="row content">
-                        <ul>
-                            <li>Language: Python</li>
-                            <li>Maths computation graphs on GPU: Tensorflow</li>
-                            <li>Web service: Python Flask</li>
-                            <li>Python environment: Anaconda</li>
-                        </ul>
-                    </div>
-                    <div className="row footer">
-                    </div>
-                </Slide>
-                <Slide>
-                    <div className="row header">
-                        <h1>Technologies Used - Client Side</h1>
-                    </div>
-                    <div className="row content">
-                        <ul>
-                            <li>Electron!</li>
-                            <li>JQuery!</li>
-                            <li>React!</li>
-                            <li>Redux!</li>
-                            <li>HTML5!</li>
-                            <li>CSS3!</li>
-                            <li>Babel!</li>
-                            <li>(insert buzzword here...)</li>
-                        </ul>
-                    </div>
-                    <div className="row footer">
-                    </div>
-                </Slide>
+                </SimpleSlide>
             </PowerpointSection>
         );
     }
