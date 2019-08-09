@@ -40,8 +40,8 @@ export default class IntroSlides extends Component {
                 </SimpleSlide>
                 <SimpleSlide title="Accuracy">
                     <div style={{ width: '100%' }}>
-                        <div className="centre-image" style={{ height: '400px' }}>
-                            <img src="./images/diagrams/Accuracy.png" />
+                        <div className="centre-image">
+                            <img src="./images/diagrams/Accuracy.png" style={{ width: '500px' }} />
                         </div>
                     </div>
                 </SimpleSlide>

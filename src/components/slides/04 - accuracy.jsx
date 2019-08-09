@@ -28,7 +28,7 @@ export default class AccuracySlides extends Component {
                 <SimpleSlide title="Measuring Accuracy">
                     <div style={{ width: '100%' }}>
                         <div className="centre-image" style={{ marginBottom: '10px' }}>
-                            <img src="./images/diagrams/accuracy.png" style={{ width: '700px' }} />
+                            <img src="./images/diagrams/accuracy.png" style={{ width: '500px' }} />
                         </div>
                     </div>
                 </SimpleSlide>
