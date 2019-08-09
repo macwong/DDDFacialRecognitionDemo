@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PowerpointSection from '../powerpointsection';
 import Slide from '../slide';
 import DemoSlide from './demoslide';
@@ -10,21 +10,21 @@ export default class BasicConceptsSlides extends Component {
 
     render() {
         return (
-            <PowerpointSection 
-                section={this.props.section} 
-                cssClass={this.props.cssClass} 
+            <PowerpointSection
+                section={this.props.section}
+                cssClass={this.props.cssClass}
             >
                 <Slide>
                     <div className="row header">
                         <h1>What is Facial Recognition?</h1>
                     </div>
                     <div className="row content">
-                        <div style={{width: '100%'}}>
+                        <div style={{ width: '100%' }}>
                             <ul>
                                 <li>Identifying a person from an image (or video frame)</li>
                             </ul>
-                            <div className="centre-image" style={{height: '400px'}}>
-                            <img src="./images/facerec.png" />
+                            <div className="centre-image" style={{ height: '400px' }}>
+                                <img src="./images/facerec.png" />
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export default class BasicConceptsSlides extends Component {
                     <div className="row footer">
                     </div>
                 </Slide>
-                <DemoSlide />
+                <DemoSlide title="Pipeline Demo" />
             </PowerpointSection>
 
         );

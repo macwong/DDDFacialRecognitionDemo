@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { jumpToDemo } from '../../actions/actions_menu';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -9,11 +9,16 @@ class DemoSlide extends Component {
     constructor(props) {
         super(props);
 
-        this.onDemoClick = this.onDemoClick.bind(this);        
+        this.onDemoClick = this.onDemoClick.bind(this);
     }
 
     onDemoClick(e) {
-        this.props.jumpToDemo("Features Demo");
+        if (this.props.title) {
+            this.props.jumpToDemo(this.props.title);
+        }
+        else {
+            this.props.jumpToDemo("Features Demo");
+        }
     }
 
     render() {
@@ -23,10 +28,10 @@ class DemoSlide extends Component {
                     {/* <h1>Demo</h1> */}
                 </div>
                 <div className="row content">
-                    <div className="centre-image" style={{width: '100%', height: 'calc(100vh - 200px)'}}>
-                        <img 
-                            src="./images/livedemo.png" 
-                            style={{width: '500px', cursor: 'pointer'}}
+                    <div className="centre-image" style={{ width: '100%', height: 'calc(100vh - 200px)' }}>
+                        <img
+                            src="./images/livedemo.png"
+                            style={{ width: '500px', cursor: 'pointer' }}
                             onClick={this.onDemoClick}
                         />
                     </div>
