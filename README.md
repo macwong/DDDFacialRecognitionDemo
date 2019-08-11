@@ -1,13 +1,11 @@
-# Pimped Presentation
-This is a template for creating presentations using Electron.
-
-This is useful if you have an Electron app that you want to show during a presentation. Both the presentation slides and the Electron app itself can be integrated, which makes for a more seamless presentation.
+# DDD Melbourne 2019 - Understanding Facial Recognition
+These are the presentation "slides" (Electron app) for my DDD Melbourne 2019 presentation.  
 
 To install in your local environment:
 
 1. Clone the repo:
 ```
-git clone https://github.com/macwong/PimpedPresentation.git my-pimped-presentation
+git clone https://github.com/macwong/DDDFacialRecognitionDemo
 ```
 
 2. Install and run (requires npm):
@@ -15,3 +13,7 @@ git clone https://github.com/macwong/PimpedPresentation.git my-pimped-presentati
 npm install
 npm start
 ```
+
+To get the facial recognition demos to work, you'll also need to configure the following repo:
+
+https://github.com/macwong/FacialRecognitionService
